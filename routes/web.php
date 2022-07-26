@@ -29,29 +29,61 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('dashboard');
 	})->name('dashboard');
 
-	Route::get('billing', function () {
-		return view('billing');
-	})->name('billing');
+	Route::get('penertiban', function () {
+		return view('penertiban');
+	})->name('penertiban');
 
 	Route::get('profile', function () {
 		return view('profile');
 	})->name('profile');
 
-	Route::get('rtl', function () {
-		return view('rtl');
-	})->name('rtl');
+	Route::get('tv-digital', function () {
+		return view("laravel-examples.tv-digital");
+	})->name('tv-digital');
 
-	Route::get('user-management', function () {
-		return view('laravel-examples/user-management');
-	})->name('user-management');
+	Route::get('tv-analog', function () {
+		return view("laravel-examples.tv-analog");
+	})->name('tv-analog');
 
-	Route::get('tables', function () {
-		return view('tables');
-	})->name('tables');
+	Route::get('radio-fm', function () {
+		return view('laravel-examples/radio-fm');
+	})->name('radio-fm');
 
-    Route::get('virtual-reality', function () {
-		return view('virtual-reality');
-	})->name('virtual-reality');
+	Route::get('radio-am', function () {
+		return view('laravel-examples.radio-am');
+	})->name('radio-am');
+
+	Route::get('microwave-link', function () {
+		return view('laravel-examples.microwave-link');
+	})->name('microwave-link');
+
+	Route::get('pemantauan', function () {
+		return view('pemantauan');
+	})->name('pemantauan');
+
+    Route::get('penindakan', function () {
+		return view('penindakan');
+	})->name('penindakan');
+
+	Route::get('penanganan-gangguan', function () {
+		return view('penanganan-gangguan');
+	})->name('penanganan-gangguan');
+
+	Route::get('penyelenggara', function () {
+		return view('penyelenggara');
+	})->name('penyelenggara');
+
+	Route::get('pap5ghz', function () {
+		return view('pap5ghz');
+	})->name('pap5ghz');
+
+	Route::get('rhopf', function () {
+		return view('rhopf');
+	})->name('rhopf');
+
+	Route::get('employee', function () {
+		return view('employee');
+	})->name('employee');
 
     Route::get('static-sign-in', function () {
 		return view('static-sign-in');

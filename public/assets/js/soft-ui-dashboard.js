@@ -338,7 +338,7 @@ function navbarFixed(el) {
     navbarBlurOnScroll('navbarBlur');
     el.removeAttribute("checked");
   }
-};
+}
 
 // Set Navbar Minimized
 function navbarMinimize(el) {

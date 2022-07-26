@@ -269,7 +269,7 @@
   color: #fff;
   text-transform: uppercase;
   will-change: transform;
-  background-image: linear-gradient(310deg,#7928ca,#ff0080);
+  background-image: linear-gradient(310deg,#03a9f4,#03a9f4);
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   font-weight: 700;
   line-height: 1.5;
@@ -620,7 +620,7 @@
 .ct-docs-sidenav-pro-badge {
   text-transform: uppercase;
   float: right !important;
-  color: #d31a98;
+  color: #03a9f4;
   background-color: #eaecfb;
   font-size: 66%;
   font-weight: 600;
@@ -685,7 +685,7 @@
 
 .ct-docs-toc-col .toc-entry a:hover {
   text-decoration: none;
-  color: #5e72e4;
+  color: #03a9f4;
 }
 
 .ct-docs-toc-col .section-nav ul {
@@ -808,7 +808,7 @@
   padding-top: 8px !important;
   display: inline !important;
   border-radius: 6px !important;
-  background-image: linear-gradient(310deg,#7928ca,#ff0080) !important;
+  background-image: linear-gradient(310deg,#03a9f4,#03a9f4) !important;
 }
 
 @media (max-width: 1200px) {
@@ -865,8 +865,8 @@ li.ct-docs-nav-sidenav-active a {
   margin-bottom: 24px !important;
   margin-top: 24px !important;
   color: #fff;
-  border-color: #5e72e4;
-  background-color: #5e72e4;
+  border-color: #03a9f4;
+  background-color: #03a9f4;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   display: inline-block;
 }
@@ -875,14 +875,14 @@ li.ct-docs-nav-sidenav-active a {
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
   color: #fff;
-  border-color: #5e72e4;
-  background-color: #5e72e4;
+  border-color: #03a9f4;
+  background-color: #03a9f4;
 }
 
 .ct-docs-content-col a.ct-docs-start-button:active {
   color: #fff;
-  border-color: #5e72e4;
-  background-color: #324cdd;
+  border-color: #03a9f4;
+  background-color: #0474a9;
 }
 
 .docs {
@@ -917,7 +917,7 @@ li.ct-docs-nav-sidenav-active a {
 
 .btn-clipboard:hover {
   color: #fff;
-  background-color: #324cdd;
+  background-color: #03a9f4;
 }
 
 pre[class*=language-] {
@@ -1015,7 +1015,7 @@ code[class*=language-], pre[class*=language-] {
 .ct-docs-content-col > ul > li > a,
 .ct-docs-description a {
   text-decoration: none;
-  color: #923dfa;
+  color: #03a9f4;
   background-color: transparent;
 }
 
@@ -1105,7 +1105,7 @@ code[class*=language-], pre[class*=language-] {
 }
 
 .ct-docs-info-icon-primary {
-  background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+  background: linear-gradient(87deg, #03a9f4 0, #0288c6 100%) !important;
 }
 
 .ct-docs-info-icon-danger {
@@ -1228,8 +1228,8 @@ code[class*=language-], pre[class*=language-] {
   font-size: 14px;
   font-weight: 400;
   color: #fff;
-  border-color: #7889e8;
-  background-color: #7889e8;
+  border-color: #03a9f4;
+  background-color: #03a9f4;
   position: relative;
   padding: 16px 24px;
   margin-bottom: 16px;

@@ -10,10 +10,13 @@
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 d-flex justify-content-end" id="navbar"> 
             <div class="ms-md-3 pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-                <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="Type here...">
-            </div>
+                <div class="col-auto">
+                    <div class="bg-white border-radius-lg d-flex me-2">
+                        <i class="fas fa-search align-self-lg-center px-2" aria-hidden="true"></i>
+                      <input type="text" class="form-control border-0 ps-3" placeholder="Type here...">
+                      <button class="btn bg-gradient-info my-1 me-1">Search</button>
+                    </div>
+                  </div>
             </div>
             <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
