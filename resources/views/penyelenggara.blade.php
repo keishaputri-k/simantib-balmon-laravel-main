@@ -23,64 +23,22 @@
                                         No
                                     </th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                        Jenis Stasiun Monitor
+                                        Nama
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Tanggal
+                                        Alamat
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Waktu
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Band
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Pita Frekuensi
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Dinas
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Sub Servis
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Kelas Emisi
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Kelas Stasiun
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Level
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Identifikasi
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Legalitas
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Ketergantungan
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Kabupaten / Kota
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Kecamatan
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Kelurahan Desa
-                                    </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Latitude
+                                        Lantitude
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Longitude
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        No SPT
+                                        Frekuensi
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Tanggal SPT
+                                        Bandwith
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Creation Date
@@ -116,37 +74,31 @@
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0"></p>
@@ -170,940 +122,400 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="ps-4">
-                                      <p class="text-xs font-weight-bold mb-0">1</p>
-                                  </td>
-                                  <td>
-                                      <div>
-                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
-                                      </div>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">Admin</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <p class="text-xs font-weight-bold mb-0"></p>
-                                  </td>
-                                  <td class="text-center">
-                                      <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
-                                  </td>
-                                  <td class="text-center">
-                                      <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                          <i class="fas fa-user-edit text-secondary"></i>
-                                      </a>
-                                      <span>
-                                          <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                      </span>
-                                  </td>
+                                    <td class="ps-4">
+                                        <p class="text-xs font-weight-bold mb-0">1</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">Admin</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">admin@softui.com</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0"></p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <span>
+                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="ps-4">
