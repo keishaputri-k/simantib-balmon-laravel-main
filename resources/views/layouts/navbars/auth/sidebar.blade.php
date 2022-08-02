@@ -8,13 +8,12 @@
     </a>
   </div>
   <hr class="horizontal dark mt-0">
-  <div class="collapse navbar-collapse  w-auto" id="sidenav-collapse-main">
+  <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('dashboard') ? 'active' : '') }}" href="{{ url('dashboard') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>shop </title>
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
                   <g transform="translate(1716.000000, 291.000000)">
@@ -88,19 +87,38 @@
             <span class="nav-link-text ms-1">Microwave Link</span>
         </a>
       </li>
-      <li class="nav-item mt-2">
-        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Penertiban & Tindak Lanjut</h6>
+      <li class="nav-item pb-1">
+        <a class="nav-link {{ (Request::is('stl') ? 'active' : '') }}" href="{{ url('stl') }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                <path fill="#000000" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">STL</span>
+        </a>
+      </li>
+      <li class="nav-item pb-1">
+        <a class="nav-link {{ (Request::is('konsesi') ? 'active' : '') }}" href="{{ url('konsesi') }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                <path fill="#000000" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Konsesi</span>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('pemantauan') ? 'active' : '') }}" href="{{ url('pemantauan') }}">
+        <a class="nav-link {{ (Request::is('rhopf') ? 'active' : '') }}" href="{{ url('rhopf') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-              <path fill="#000000" fill-rule="evenodd" d="M.408 15.13a2 2 0 0 1 .59-2.642L17.038 1.33a2 2 0 0 1 2.85.602l2.828 4.644a2 2 0 0 1-.851 2.847l-17.762 8.43a2 2 0 0 1-2.59-.807L.408 15.13zm5.263-4.066l7.842-5.455l2.857 4.76l-8.712 4.135l-1.987-3.44zm-1.235.86L1.854 13.72a.5.5 0 0 0-.147.66l1.105 1.915a.5.5 0 0 0 .648.201l2.838-1.347l-1.862-3.225zm13.295-2.2L14.747 4.75l3.148-2.19a.5.5 0 0 1 .713.151l2.826 4.644a.5.5 0 0 1-.212.712l-3.49 1.656z"/>
-              <path fill="#000000" d="M17.155 22.87a.75.75 0 0 0 .226-1.036l-4-6.239a.75.75 0 0 0-.941-.278l-2.75 1.25a.75.75 0 0 0-.318.274l-3.25 4.989a.75.75 0 0 0 1.256.819l3.131-4.806l.51-.232v5.64a.75.75 0 1 0 1.5 0v-6.22l3.6 5.613a.75.75 0 0 0 1.036.226z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 23.355h9L17.889 4l11 40L37 23.355h9"/>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Pemantauan</span>
+          <span class="nav-link-text ms-1">RHOPF</span>
         </a>
+      </li>
+      <li class="nav-item mt-2">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Penertiban & Penanganan Gangguan</h6>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('penertiban') ? 'active' : '') }}" href="{{ url('penertiban') }}">
@@ -110,22 +128,7 @@
               <path fill="#000000" d="M21.66 26.21a12.1 12.1 0 1 1 8.57-3.54a12.11 12.11 0 0 1-8.57 3.54Zm0-22.21a10.11 10.11 0 0 0-10.12 10.11a10 10 0 0 0 3 7.14a10.12 10.12 0 0 0 14.31 0A10.11 10.11 0 0 0 21.66 4Zm7.86 18Z"/>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Penertiban</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {{ (Request::is('penindakan') ? 'active' : '') }}" href="{{ url('penindakan') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40">
-              <g fill="#000000" fill-rule="evenodd" clip-rule="evenodd">
-                <path d="M17 8h-4a3 3 0 0 0-3 3v24a3 3 0 0 0 3 3h17a3 3 0 0 0 3-3V11a3 3 0 0 0-3-3h-1v2h1a1 1 0 0 1 1 1v24a1 1 0 0 1-1 1H13a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h4V8Zm2 2h8V8h-8v2Z"/>
-                <path d="M14 19a1 1 0 0 1 1-1h13a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1Zm0 5a1 1 0 0 1 1-1h7a1 1 0 1 1 0 2h-7a1 1 0 0 1-1-1Zm0 5a1 1 0 0 1 1-1h11a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1Z"/>
-                <path d="M8 10v25a5 5 0 0 0 5 5h17v2H13a7 7 0 0 1-7-7V10h2Zm28 3a3 3 0 1 1 6 0v20.303l-3 4.5l-3-4.5V13Zm3-1a1 1 0 0 0-1 1v19.697l1 1.5l1-1.5V13a1 1 0 0 0-1-1Z"/>
-                <path d="M41 17h-4v-2h4v2ZM26 6a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1ZM16 6a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1Z"/>
-              </g>
-            </svg>
-          </div>
-          <span class="nav-link-text ms-1">Penindakan</span>
+          <span class="nav-link-text ms-1">Penertiban & Tindak Lanjut</span>
         </a>
       </li>
       <li class="nav-item">
@@ -137,6 +140,34 @@
           </div>
           <span class="nav-link-text ms-1">Penanganan Gangguan</span>
         </a>
+      </li>
+
+      <li class="nav-item mt-2">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Izin Kelas</h6>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link {{ (Request::is('2-4ghz') ? 'active' : '') }}" href="{{ url('2-4ghz') }}">
+          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+              <path fill="#000000" fill-rule="evenodd" d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119c0 1.536.632 2.572 1.425 3.56c.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774c.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.354 18.354 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618C4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5c-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714c-.356.467-.615.898-.753 1.357a.75.75 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834c.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634c.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5zM9.5 21.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75zM8.75 18a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5z"/>
+            </svg>
+          </div>
+          <span class="nav-link-text ms-1">2,4 GHZ</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ (Request::is('pap5ghz') ? 'active' : '') }}" href="{{ url('pap5ghz') }}">
+          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+              <path fill="#000000" d="M16 30h-2v-5a3.003 3.003 0 0 0-3-3H7a3.003 3.003 0 0 0-3 3v5H2v-5a5.006 5.006 0 0 1 5-5h4a5.006 5.006 0 0 1 5 5zM9 10a3 3 0 1 1-3 3a3 3 0 0 1 3-3m0-2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm21 4a1.992 1.992 0 0 0-.512.074l-1.055-1.055a3.879 3.879 0 0 0 0-4.038l1.055-1.055a2.034 2.034 0 1 0-1.414-1.414L27.02 5.567a3.879 3.879 0 0 0-4.038 0l-1.055-1.055a2.034 2.034 0 1 0-1.414 1.414l1.055 1.055a3.879 3.879 0 0 0 0 4.038l-1.055 1.055a2.034 2.034 0 1 0 1.414 1.414l1.055-1.055a3.879 3.879 0 0 0 4.038 0l1.055 1.055A1.996 1.996 0 1 0 30 12zm-7-3a2 2 0 1 1 2 2a2.002 2.002 0 0 1-2-2z"/>
+            </svg>
+          </div>
+          <span class="nav-link-text ms-1">5,8 GHZ</span>
+        </a>
+      </li>
+      <li class="nav-item mt-2">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Data SIMS</h6>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('penyelenggara') ? 'active' : '') }}" href="{{ url('penyelenggara') }}">
@@ -151,27 +182,7 @@
           <span class="nav-link-text ms-1">Penyelenggara</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link {{ (Request::is('pap5ghz') ? 'active' : '') }}" href="{{ url('pap5ghz') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
-              <path fill="#000000" d="M16 30h-2v-5a3.003 3.003 0 0 0-3-3H7a3.003 3.003 0 0 0-3 3v5H2v-5a5.006 5.006 0 0 1 5-5h4a5.006 5.006 0 0 1 5 5zM9 10a3 3 0 1 1-3 3a3 3 0 0 1 3-3m0-2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm21 4a1.992 1.992 0 0 0-.512.074l-1.055-1.055a3.879 3.879 0 0 0 0-4.038l1.055-1.055a2.034 2.034 0 1 0-1.414-1.414L27.02 5.567a3.879 3.879 0 0 0-4.038 0l-1.055-1.055a2.034 2.034 0 1 0-1.414 1.414l1.055 1.055a3.879 3.879 0 0 0 0 4.038l-1.055 1.055a2.034 2.034 0 1 0 1.414 1.414l1.055-1.055a3.879 3.879 0 0 0 4.038 0l1.055 1.055A1.996 1.996 0 1 0 30 12zm-7-3a2 2 0 1 1 2 2a2.002 2.002 0 0 1-2-2z"/>
-            </svg>
-          </div>
-          <span class="nav-link-text ms-1">PAP 5ghz</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {{ (Request::is('rhopf') ? 'active' : '') }}" href="{{ url('rhopf') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
-              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 23.355h9L17.889 4l11 40L37 23.355h9"/>
-            </svg>
-          </div>
-          <span class="nav-link-text ms-1">RHOPF</span>
-        </a>
-      </li>
-      <li class="nav-item">
+      <li class="nav-item mt-4">
         <a class="nav-link {{ (Request::is('employee') ? 'active' : '') }}" href="{{ url('employee') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
@@ -182,10 +193,9 @@
           <span class="nav-link-text ms-1">Employee</span>
         </a>
       </li>
-      
     </ul>
   </div>
-  <div class="sidenav-footer mx-3 ">
+  <div class="sidenav-footer mx-2">
     <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
       <div class="full-background" style="background-image: url('../assets/img/curved-images/white-curved.jpeg')"></div>
       <div class="card-body text-start p-3 w-100">

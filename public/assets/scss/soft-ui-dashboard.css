@@ -4811,7 +4811,7 @@ fieldset:disabled .btn {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #03a9f4;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4830,7 +4830,7 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #344767;
+  color: #03a9f4;
   background-color: #fff;
 }
 
@@ -5233,7 +5233,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(52, 71, 103, 0.9);
+  color: rgba(23, 193, 232, 1);
 }
 
 .navbar-light .navbar-toggler {
@@ -20181,7 +20181,7 @@ hr.horizontal.gray-light {
 }
 
 .sidenav[data-color="primary"] .navbar-nav > .nav-item > .nav-link.active .icon {
-  background-image: linear-gradient(310deg, #17c1e8 0%, #17c1e8 100%);
+  background-image: linear-gradient(310deg, #03a9f4 0%, #03a9f4 100%);
 }
 
 .sidenav[data-color="secondary"] .navbar-nav > .nav-item > .nav-link.active .icon {
@@ -20193,7 +20193,7 @@ hr.horizontal.gray-light {
 }
 
 .sidenav[data-color="info"] .navbar-nav > .nav-item > .nav-link.active .icon {
-  background-image: linear-gradient(310deg, #17c1e8 0%, #17c1e8 100%);
+  background-image: linear-gradient(310deg, #03a9f4 0%, #03a9f4 100%);
 }
 
 .sidenav[data-color="warning"] .navbar-nav > .nav-item > .nav-link.active .icon {

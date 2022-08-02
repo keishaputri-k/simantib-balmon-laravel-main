@@ -57,9 +57,13 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('laravel-examples.microwave-link');
 	})->name('microwave-link');
 
-	Route::get('pemantauan', function () {
-		return view('pemantauan');
-	})->name('pemantauan');
+	Route::get('stl', function () {
+		return view('laravel-examples.stl');
+	})->name('stl');
+
+	Route::get('konsesi', function () {
+		return view('laravel-examples.konsesi');
+	})->name('konsesi');
 
     Route::get('penindakan', function () {
 		return view('penindakan');
@@ -69,13 +73,17 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('penanganan-gangguan');
 	})->name('penanganan-gangguan');
 
+	Route::get('2-4ghz', function () {
+		return view('kelas-izin.2-4ghz');
+	})->name('2-4ghz');
+
+	Route::get('pap5ghz', function () {
+		return view('kelas-izin.pap5ghz');
+	})->name('pap5ghz');
+
 	Route::get('penyelenggara', function () {
 		return view('penyelenggara');
 	})->name('penyelenggara');
-
-	Route::get('pap5ghz', function () {
-		return view('pap5ghz');
-	})->name('pap5ghz');
 
 	Route::get('rhopf', function () {
 		return view('rhopf');

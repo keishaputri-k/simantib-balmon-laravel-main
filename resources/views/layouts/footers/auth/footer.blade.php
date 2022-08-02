@@ -6,17 +6,14 @@
                     © <script>
                         document.write(new Date().getFullYear())
                     </script>, all rights reserved. made by
-                    <a class="font-weight-bold" target="_blank">IT Team</a>
+                    <a class="font-weight-bold" target="_blank">DevOps Team</a>
                     for a better web. 
                 </div>
             </div>
             <div class="col-lg-6">
                 <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                     <li class="nav-item">
-                        <a href="" class="nav-link text-muted" target="_blank">IT Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-muted" target="_blank">UPDIVISION</a>
+                        <a href="" class="nav-link text-muted" target="_blank">DevOps Team</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link text-muted" target="_blank">About Us</a>
