@@ -17249,7 +17249,7 @@ fieldset:disabled .btn {
 
 */
 .alert-primary {
-  background-image: linear-gradient(310deg, #2152ff 0%, #02c6f3 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #02c6f3 100%);
 }
 
 .alert-secondary {
@@ -17261,7 +17261,7 @@ fieldset:disabled .btn {
 }
 
 .alert-info {
-  background-image: linear-gradient(310deg, #2152ff 0%, #02c6f3 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #02c6f3 100%);
 }
 
 .alert-warning {
@@ -18117,7 +18117,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-primary:after {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
   opacity: .85;
 }
 
@@ -18144,7 +18144,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-info:after {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
   opacity: .85;
 }
 
@@ -18762,7 +18762,7 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
 }
 
 .bg-gradient-secondary {
@@ -18774,7 +18774,7 @@ label,
 }
 
 .bg-gradient-info {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
 }
 
 .bg-gradient-warning {
@@ -18988,7 +18988,7 @@ label,
 }
 
 svg.text-primary .color-foreground {
-  fill: #2152ff;
+  fill: #17C1E8;
 }
 
 svg.text-primary .color-background {
@@ -19004,7 +19004,7 @@ svg.text-secondary .color-background {
 }
 
 svg.text-info .color-foreground {
-  fill: #2152ff;
+  fill: #17C1E8;
 }
 
 svg.text-info .color-background {
@@ -19113,7 +19113,7 @@ svg.text-dark .color-background {
 }
 
 *.gradient-animation {
-  background: linear-gradient(-45deg, #2152ff, #ea0606, #fbcf33, #2152ff, #344767);
+  background: linear-gradient(-45deg, #17C1E8, #ea0606, #fbcf33, #17C1E8, #344767);
   background-size: 400% 400% !important;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
@@ -20652,8 +20652,8 @@ hr.horizontal.gray-light {
 }
 
 .nav.nav-pills.nav-pills-primary .moving-tab .nav-link.active {
-  background: #2152ff;
-  color: #2152ff;
+  background: #17C1E8;
+  color: #17C1E8;
 }
 
 .nav.nav-pills.nav-pills-info {
@@ -20666,8 +20666,8 @@ hr.horizontal.gray-light {
 }
 
 .nav.nav-pills.nav-pills-info .moving-tab .nav-link.active {
-  background: #2152ff;
-  color: #2152ff;
+  background: #17C1E8;
+  color: #17C1E8;
 }
 
 .nav.nav-pills.nav-pills-success {
@@ -20781,7 +20781,7 @@ hr.horizontal.gray-light {
 }
 
 .pagination.pagination-primary .page-item.active > .page-link, .pagination.pagination-primary .page-item.active > .page-link:focus, .pagination.pagination-primary .page-item.active > .page-link:hover {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
   border: none;
 }
 
@@ -20796,7 +20796,7 @@ hr.horizontal.gray-light {
 }
 
 .pagination.pagination-info .page-item.active > .page-link, .pagination.pagination-info .page-item.active > .page-link:focus, .pagination.pagination-info .page-item.active > .page-link:hover {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #21d4fd 100%);
   border: none;
 }
 
@@ -21822,7 +21822,7 @@ p {
 }
 
 .text-gradient.text-info {
-  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+  background-image: linear-gradient(310deg, #17C1E8, #21D4FD);
 }
 
 .text-gradient.text-success {
