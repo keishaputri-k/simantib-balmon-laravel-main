@@ -3,7 +3,48 @@
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
     <a class="align-items-center d-flex m-0 navbar-brand text-wrap" href="{{ route('dashboard') }}">
-        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="...">
+      <svg width="53" height="53" viewBox="0 0 195 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_309_4194)">
+          <rect x="5.65685" y="95.1779" width="126.769" height="26.6699" rx="13.3349" transform="rotate(-44.9245 5.65685 95.1779)" fill="white" stroke="url(#paint0_linear_309_4194)" stroke-width="8"/>
+          <rect x="52.327" y="141.328" width="93.443" height="26.6699" rx="13.3349" transform="rotate(-44.9245 52.327 141.328)" fill="white" stroke="url(#paint1_linear_309_4194)" stroke-width="8"/>
+          <rect x="76.2946" y="211.902" width="127.385" height="26.6699" rx="13.3349" transform="rotate(-44.9245 76.2946 211.902)" fill="white" stroke="url(#paint2_linear_309_4194)" stroke-width="8"/>
+          <circle cx="24.6702" cy="141.288" r="14" fill="white" stroke="url(#paint3_linear_309_4194)" stroke-width="8"/>
+          <circle cx="165.67" cy="94.2885" r="14" fill="white" stroke="url(#paint4_linear_309_4194)" stroke-width="8"/>
+        </g>
+        <defs>
+          <filter id="filter0_d_309_4194" x="1.67017" y="2.1803" width="193.128" height="238.081" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="3" dy="3"/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_309_4194"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_309_4194" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear_309_4194" x1="67.3845" y1="95.1704" x2="67.3845" y2="129.84" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#77DEFF"/>
+            <stop offset="1" stop-color="#3190FF"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_309_4194" x1="97.3916" y1="141.321" x2="97.3916" y2="175.991" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#77DEFF"/>
+            <stop offset="1" stop-color="#3190FF"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear_309_4194" x1="138.33" y1="211.894" x2="138.33" y2="246.564" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#77DEFF"/>
+            <stop offset="1" stop-color="#3190FF"/>
+          </linearGradient>
+          <linearGradient id="paint3_linear_309_4194" x1="24.6702" y1="123.288" x2="24.6702" y2="159.288" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#77DEFF"/>
+            <stop offset="1" stop-color="#3190FF"/>
+          </linearGradient>
+          <linearGradient id="paint4_linear_309_4194" x1="165.67" y1="76.2885" x2="165.67" y2="112.288" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#77DEFF"/>
+            <stop offset="1" stop-color="#3190FF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+        
         <span class="ms-3 font-weight-bold">SIMANTIB</span>
     </a>
   </div>

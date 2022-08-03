@@ -17664,7 +17664,7 @@ fieldset:disabled .btn {
 .btn-info:hover,
 .btn.bg-gradient-info:hover {
   background-color: #17c1e8;
-  border-color: #17c1e8;
+  border-color: #2152FF;
 }
 
 .btn-info .btn.bg-outline-info,
@@ -17679,7 +17679,7 @@ fieldset:disabled .btn {
 .show >
 .btn.bg-gradient-info.dropdown-toggle {
   color: color-yiq(#17c1e8);
-  background-color: #17c1e8;
+  background-color: #2152FF;
 }
 
 .btn-info.focus, .btn-info:focus,
