@@ -17249,7 +17249,7 @@ fieldset:disabled .btn {
 
 */
 .alert-primary {
-  background-image: linear-gradient(310deg, #17C1E8 0%, #02c6f3 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #2152ff 100%);
 }
 
 .alert-secondary {
@@ -17261,7 +17261,7 @@ fieldset:disabled .btn {
 }
 
 .alert-info {
-  background-image: linear-gradient(310deg, #17C1E8 0%, #02c6f3 100%);
+  background-image: linear-gradient(310deg, #17C1E8 0%, #2152ff 100%);
 }
 
 .alert-warning {
@@ -20331,7 +20331,7 @@ hr.horizontal.gray-light {
 }
 
 .navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon {
-  background-image: linear-gradient(310deg, #17c1e8 0%, #17c1e8 100%);
+  background-image: linear-gradient(310deg, #17c1e8 0%, #2152ff 100%);
 }
 
 .navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon svg .color-background,
