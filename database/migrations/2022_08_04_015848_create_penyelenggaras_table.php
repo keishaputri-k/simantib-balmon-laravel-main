@@ -15,13 +15,26 @@ return new class extends Migration
     {
         Schema::create('penyelenggaras', function (Blueprint $table) {
             $table->id();
-            $table->integer('no_penyelenggara');
-            $table->string('nama_penyelenggara');
-            $table->string('alamat_penyelenggara');
-            $table->string('lantitude_penyelenggara');
-            $table->string('longitude_penyelenggara');
-            $table->string('frekuensi_penyelenggara');
-            $table->string('bandwidth_penyelenggara');
+            $table->string('curr_lic_num');
+            $table->integer('client_id');
+            $table->string('application_id');
+            $table->string('client_name');
+            $table->string('freq');
+            $table->string('subservice');
+            $table->string('freq_pair');
+            $table->string('bwidht');
+            $table->string('eq_mdl');
+            $table->string('stn_name');
+            $table->string('stn_addr');
+            $table->string('longitude');
+            $table->string('latitude');
+            $table->string('city');
+            $table->string('district');
+            $table->string('province');
+            $table->string('link_id');
+            $table->string('stasiun_lawan');
+            $table->string('corr_address');
+            $table->string('merk_perangkat');
             $table->timestamps();
         });
     }

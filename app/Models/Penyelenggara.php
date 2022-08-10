@@ -10,12 +10,25 @@ class Penyelenggara extends Model
     use HasFactory;
 
     protected $fillable = [
-        'no_penyelenggara',
-        'nama_penyelenggara',
-        'alamat_penyelenggara',
-        'lantitude_penyelenggra',
-        'longitude_penyelenggra',
-        'frekuensi_penyelenggra',
-        'bandwith_penyelenggra'
+        'curr_lic_num',
+        'client_id',
+        'application_id',
+        'client_name',
+        'freq',
+        'subservice',
+        'freq_pair',
+        'bwidht',
+        'eq_mdl',
+        'stn_name',
+        'stn_addr',
+        'longitude',
+        'latitude',
+        'stn_addr',
+        'city',
+        'district',
+        'privince',
+        'link_id',
+        'stasiun_lawan',
+        'corr_address',
     ];
 }

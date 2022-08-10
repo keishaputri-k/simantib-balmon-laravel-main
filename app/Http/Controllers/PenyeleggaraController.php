@@ -17,14 +17,25 @@ class PenyeleggaraController extends Controller
         $data = $request->all();
         try{
             $penyelenggara = new Penyelenggara();
-            $penyelenggara -> no_penyelenggara = $data['no_penyelenggara'];
-            $penyelenggara -> nama_penyelenggara = $data['nama_penyelenggara'];
-            $penyelenggara -> alamat_penyelenggara = $data['alamat_penyelenggara'];
-            $penyelenggara -> lantitide_penyelenggara = $data['lantitude_penyelenggara'];
-            $penyelenggara -> longitude_penyelenggara = $data['longitude_penyelenggara'];
-            $penyelenggara -> frekuensi_penyelenggara = $data['frekuensi_penyelenggara'];
-            $penyelenggara -> bandwidth_penyelenggara = $data['bandwidth_penyelenggara'];
-            $penyelenggara -> author_id = $data['author_id'];
+            $penyelenggara -> curr_lic_num = $data['curr_lic_num'];
+            $penyelenggara -> client_id = $data['client_id'];
+            $penyelenggara -> application_id = $data['application_id'];
+            $penyelenggara -> client_name = $data['client_name'];
+            $penyelenggara -> freq = $data['freq'];
+            $penyelenggara -> subservice = $data['subservice'];
+            $penyelenggara -> freq_pair = $data['freq_pair'];
+            $penyelenggara -> bwidht = $data['bwidht'];
+            $penyelenggara -> eq_mdl = $data['eq_mdl'];
+            $penyelenggara -> stn_name = $data['stn_name'];
+            $penyelenggara -> stn_addr = $data['stn_addr'];
+            $penyelenggara -> longitude = $data['longitude'];
+            $penyelenggara -> lantitude = $data['lantitude'];
+            $penyelenggara -> city = $data['city'];
+            $penyelenggara -> district = $data['district'];
+            $penyelenggara -> province = $data['province'];
+            $penyelenggara -> link_id = $data['link_id'];
+            $penyelenggara -> stasiun_lawan = $data['stasiun_lawan'];
+            $penyelenggara -> corr_address = $data['corr_address'];
 
             $penyelenggara -> save();
             $status = 'succes';
@@ -36,19 +47,30 @@ class PenyeleggaraController extends Controller
         }
     }
     
-
+    //update funcetion
     public function updatePenyelenggara($id, Request $request){
         $data = $request->all();
         try{
-            $penyelenggara = new Penyelenggara();
-            $penyelenggara -> no_penyelenggara = $data['no_penyelenggara'];
-            $penyelenggara -> nama_penyelenggara = $data['nama_penyelenggara'];
-            $penyelenggara -> alamat_penyelenggara = $data['alamat_penyelenggara'];
-            $penyelenggara -> lantitide_penyelenggara = $data['lantitude_penyelenggara'];
-            $penyelenggara -> longitude_penyelenggara = $data['longitude_penyelenggara'];
-            $penyelenggara -> frekuensi_penyelenggara = $data['frekuensi_penyelenggara'];
-            $penyelenggara -> bandwidth_penyelenggara = $data['bandwidth_penyelenggara'];
-            $penyelenggara -> author_id = $data['author_id'];
+            $penyelenggara = Penyelenggara::findOrFail($id);
+            $penyelenggara -> curr_lic_num = $data['curr_lic_num'];
+            $penyelenggara -> client_id = $data['client_id'];
+            $penyelenggara -> application_id = $data['application_id'];
+            $penyelenggara -> client_name = $data['client_name'];
+            $penyelenggara -> freq = $data['freq'];
+            $penyelenggara -> subservice = $data['subservice'];
+            $penyelenggara -> freq_pair = $data['freq_pair'];
+            $penyelenggara -> bwidht = $data['bwidht'];
+            $penyelenggara -> eq_mdl = $data['eq_mdl'];
+            $penyelenggara -> stn_name = $data['stn_name'];
+            $penyelenggara -> stn_addr = $data['stn_addr'];
+            $penyelenggara -> longitude = $data['longitude'];
+            $penyelenggara -> lantitude = $data['lantitude'];
+            $penyelenggara -> city = $data['city'];
+            $penyelenggara -> district = $data['district'];
+            $penyelenggara -> province = $data['province'];
+            $penyelenggara -> link_id = $data['link_id'];
+            $penyelenggara -> stasiun_lawan = $data['stasiun_lawan'];
+            $penyelenggara -> corr_address = $data['corr_address'];
 
             $penyelenggara -> save();
             $status = 'succes';
