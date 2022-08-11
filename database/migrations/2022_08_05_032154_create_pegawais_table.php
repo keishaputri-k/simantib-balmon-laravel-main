@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pegawais', function (Blueprint $table) {
             $table->id();
-            $table->integer('nib_pegawai');
+            $table->string('nip_pegawai');
             $table->string('nama_pegawai');
             $table->string('level_pegawai');
             $table->string('password_pegawai');

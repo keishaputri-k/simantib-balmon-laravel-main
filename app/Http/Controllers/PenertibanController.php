@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class PenertibanController extends Controller
 {
     //function Read
-    public function readPenertiban($id){
+    public function readPenertiban(){
+        return Penertiban::all();
+    }
+
+    //function id Read
+    public function readIdPenertiban($id){
         return Penertiban::findOrFail($id);
 
     }

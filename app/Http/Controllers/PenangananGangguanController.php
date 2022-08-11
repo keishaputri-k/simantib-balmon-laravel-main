@@ -8,7 +8,13 @@ use Illuminate\Http\Request;
 class PenangananGangguanController extends Controller
 {
     //function Read
-     public function readPenangananGangguan($id){
+     public function readPenangananGangguan(){
+        return PenangananGangguan::all();
+
+    }
+
+    //function id Read
+    public function readIdPenangananGangguan($id){
         return PenangananGangguan::findOrFail($id);
 
     }

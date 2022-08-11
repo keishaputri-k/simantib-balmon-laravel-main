@@ -5,10 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\Penyelenggara;
 use Illuminate\Http\Request;
 
-class PenyeleggaraController extends Controller
+class PenyelenggaraController extends Controller
 {
     //function Read
-    public function readPenyelenggara($id){
+    public function readPenyelenggara(){
+        return Penyelenggara::all();
+    }
+
+    //function Id Read
+    public function readIdPenyelenggara($id){
         return Penyelenggara::findOrFail($id);
     }
     

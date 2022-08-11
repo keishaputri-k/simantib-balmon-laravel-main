@@ -7,10 +7,16 @@ use Illuminate\Http\Request;
 
 class Pap2ghzController extends Controller
 {
-     ////function Read
-     public function readPap2ghz($id){
+    //function Read
+    public function readPap2ghz(){
+        return Pap2ghz::all();
+    }
+
+    //function Read
+    public function readIdPap2ghz($id){
         return Pap2ghz::findOrFail($id);
-}
+    }
+
     //function 
     public function createPap2ghz(Request $request){
         $data = $request->all();

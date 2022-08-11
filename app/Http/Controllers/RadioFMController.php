@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class RadioFMController extends Controller
 {
     //function Read
-    public function readRadioFM($id){
+    public function readRadioFM(){
+        return RadioFM::all();
+    }
+
+    //function Read id
+    public function readIdRadioFM($id){
         return RadioFM::findOrFail($id);
     }
 

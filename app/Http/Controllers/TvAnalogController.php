@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class TvAnalogController extends Controller
 {
     //function Read
-    public function readTvDigtal($id){
+    public function readTvDigtal(){
+        return TvAnalog::all();
+    }
+
+    //function Read
+    public function readIdTvDigtal($id){
         return TvAnalog::findOrFail($id);
     }
 

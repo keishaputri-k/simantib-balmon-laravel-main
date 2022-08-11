@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class RhopfController extends Controller
 {
     //function Read
-    public function readRHOPF($id){
+    public function readRHOPF(){
+        return RHOPF::all();
+    }
+
+    //function id Read
+    public function readIdRHOPF($id){
         return RHOPF::findOrFail($id);
     }
 

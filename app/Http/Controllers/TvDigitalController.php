@@ -6,9 +6,14 @@ use App\Models\TvDigital;
 use Illuminate\Http\Request;
 
 class TvDigitalController extends Controller
-{
+{    
     //function Read
-    public function readTvDigtal($id){
+    public function readTvDigtal(){
+        return TvDigital::all();
+    }
+
+    //function Read
+    public function readIdTvDigtal($id){
         return TvDigital::findOrFail($id);
     }
 
