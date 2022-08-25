@@ -10,6 +10,7 @@ class TvDigital extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'curr_lic_num',
         'logo',
         'alamat',

@@ -9,6 +9,7 @@ class RadioAM extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'nama_stasiun_radio',
         'lokasi_pemancar',
         'frekuensi_terukur_mhz',

@@ -4,11 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\MicrowaveLink;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MicrowaveLinkController extends Controller
 {
     //function Read
-    public function readMicrowaveLink($id){
+    public function readMicrowaveLink(){
+        $ml = DB::table('microwave_links');
+        return view('laravel-examples.microwave-link',[
+            'mlList' => $ml 
+            ->paginate(10)]
+        );
+    }
+    public function readIdMicrowaveLink($id){
         return MicrowaveLink::findOrFail($id);
     }
 
@@ -70,5 +78,14 @@ class MicrowaveLinkController extends Controller
             $status = 'error';
             return response()->json(compact('status', 'th'),200);
         }
+    }
+    
+    //delete function
+    public function deleteMicrowavelink($id){
+        $book = Microwavelink::findOrFail($id);
+        $book -> delete();
+
+        $status = "delete status";
+        return response()->json(compact('status'),200);
     }
 }

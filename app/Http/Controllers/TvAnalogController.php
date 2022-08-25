@@ -4,16 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Models\TvAnalog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TvAnalogController extends Controller
 {
     //function Read
-    public function readTvDigtal(){
-        return TvAnalog::all();
+    public function readTvAnalog(){
+        $tvAnalog = DB::table('tv_analogs');
+        return view('laravel-examples.tv-analog',[
+            'tvAnalogList' => $tvAnalog
+            ->paginate(10)
+        ]);
     }
 
     //function Read
-    public function readIdTvDigtal($id){
+    public function readIdTvAnalog($id){
         return TvAnalog::findOrFail($id);
     }
 

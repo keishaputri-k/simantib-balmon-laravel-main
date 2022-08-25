@@ -10,6 +10,7 @@ class PenangananGangguan extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'upt',
         'no_isr',
         'no_surat_pengaduan',
@@ -18,6 +19,7 @@ class PenangananGangguan extends Model
         'tgl_spt_pengukuran_karasteristik_frekuensi_radio',
         'uraian_kasus',
         'frekuensi_terganggu',
+        'pihak_terganggu',
         'pihak_pengganggu',
         'latitude_pengganggu',
         'longitude_pengganggu',

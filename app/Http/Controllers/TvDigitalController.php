@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\TvDigital;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TvDigitalController extends Controller
 {    
     //function Read
     public function readTvDigtal(){
-        return TvDigital::all();
+        $tvDigital = DB::table('tv_digitals');
+        return view('laravel-examples.tv-digital',[
+            'tvDigitalList' => $tvDigital
+            ->paginate(10)
+        ]);
     }
 
     //function Read

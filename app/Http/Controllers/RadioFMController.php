@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\RadioFM;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RadioFMController extends Controller
 {
     //function Read
     public function readRadioFM(){
-        return RadioFM::all();
+        $rfm = DB::table('radio_f_m_s');
+        return view('laravel-examples.radio-fm',[
+            'rfmList' => $rfm
+            ->paginate(10)
+        ]);
     }
 
     //function Read id

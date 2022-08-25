@@ -29,6 +29,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('dashboard');
 	})->name('dashboard');
 
+	Route::get('comparation', function () {
+		return view('comparation');
+	})->name('comparation');
+
 	Route::get('penertiban', function () {
 		return view('penertiban');
 	})->name('penertiban');
@@ -126,3 +130,6 @@ Route::group(['middleware' => 'guest'], function () {
 Route::get('/login', function () {
     return view('session/login-session');
 })->name('login');
+
+Route::get('/import_excel', 'ImportPenyelenggaraController@index');
+Route::post('/import_penyelenggara/import', 'ImportPenyelenggaraController@import');

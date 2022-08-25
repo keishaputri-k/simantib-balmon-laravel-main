@@ -10,9 +10,8 @@ class Pap5ghz extends Model
     use HasFactory;
 
     protected $fillable = [
-        'upt',
+        'id',
         'tanggal',
-        'nama_pengguna',
         'alamat_lokasi_perangkat_pemancar',
         'koor_perangkat_lantitude',
         'koor_perangkat_longitude',

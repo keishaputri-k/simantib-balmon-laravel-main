@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\PenangananGangguan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PenangananGangguanController extends Controller
 {
     //function Read
      public function readPenangananGangguan(){
-        return PenangananGangguan::all();
-
+        $penangananGangguan = DB::table('penanganan_gangguans');
+        return view('penanganan-gangguan',[
+            'penangananGangguanList' => $penangananGangguan
+            ->paginate(10)
+        ]);
     }
 
     //function id Read
@@ -32,6 +36,7 @@ class PenangananGangguanController extends Controller
             $pg -> tgl_spt_pengukuran_karasteristik_frekuensi_radio = $data['tgl_spt_pengukuran_karasteristik_frekuensi_radio'];
             $pg -> uraian_kasus = $data['uraian_kasus'];
             $pg -> frekuensi_terganggu = $data['frekuensi_terganggu'];
+            $pg -> pihak_terganggu = $data['pihak_terganggu'];
             $pg -> pihak_pengganggu = $data['pihak_pengganggu'];
             $pg -> latitude_pengganggu = $data['latitude_pengganggu'];
             $pg -> longitude_pengganggu = $data['longitude_pengganggu'];
@@ -64,6 +69,7 @@ class PenangananGangguanController extends Controller
             $pg -> tgl_spt_pengukuran_karasteristik_frekuensi_radio = $data['tgl_spt_pengukuran_karasteristik_frekuensi_radio'];
             $pg -> uraian_kasus = $data['uraian_kasus'];
             $pg -> frekuensi_terganggu = $data['frekuensi_terganggu'];
+            $pg -> pihak_terganggu = $data['pihak_terganggu'];
             $pg -> pihak_pengganggu = $data['pihak_pengganggu'];
             $pg -> latitude_pengganggu = $data['latitude_pengganggu'];
             $pg -> longitude_pengganggu = $data['longitude_pengganggu'];
@@ -72,6 +78,7 @@ class PenangananGangguanController extends Controller
             $pg -> keterangan = $data['keterangan'];
             $pg -> tanggal_selesai_aduan = $data['tanggal_selesai_aduan'];
             $pg -> status = $data['status'];
+
 
             $pg -> save();
             $status = 'succes';

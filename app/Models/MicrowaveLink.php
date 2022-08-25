@@ -10,6 +10,7 @@ class MicrowaveLink extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'tanggal',
         'metode',
         'no_risalah_hasil',
@@ -25,13 +26,4 @@ class MicrowaveLink extends Model
         'status',
         'keterangan'
     ];
-
-    //delete function
-    public function deleteMicrowavelink($id){
-        $book = Microwavelink::findOrFail($id);
-        $book -> delete();
-
-        $status = "delete status";
-        return response()->json(compact('status'),200);
-    }
 }

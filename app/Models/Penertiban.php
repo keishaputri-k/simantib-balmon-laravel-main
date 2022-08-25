@@ -10,18 +10,19 @@ class Penertiban extends Model
     use HasFactory;
 
     protected $fillable = [
-        'curr_lis_num',
         'tgl_observasi',
+        'nama_pengguna',
         'frekuensi',
+        'subservice',
         'dinas',
         'jenis_pelanggaran',
         'kab_kota',
         'tindakan',
         'status',
         'tgl_operasi_stasiun',
+        'no_isr',
         'no_surat_penindakan',
         'tgl_penindakan',
-        'tgl_upload',
         'keterangan'
     ];
 }

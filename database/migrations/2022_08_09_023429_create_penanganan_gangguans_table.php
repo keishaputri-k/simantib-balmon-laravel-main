@@ -15,24 +15,24 @@ return new class extends Migration
     {
         Schema::create('penanganan_gangguans', function (Blueprint $table) {
             $table->id();
-            $table->string('upt');
-            $table->string('no_isr');
-            $table->string('no_surat_pengaduan');
-            $table->string('tgl_surat_pengaduan');
-            $table->string('tgl_terima_surat_pengaduan');
-            $table->string('tgl_spt_pengukuran_karasteristik_frekuensi_radio');
-            $table->string('uraian_kasus');
-            $table->string('frekuensi_terganggu');
-            $table->string('servis');
-            $table->string('pihak_terganggu');
-            $table->string('pihak_pengganggu');
-            $table->string('latitude_pengganggu');
-            $table->string('longitude_pengganggu');
-            $table->string('latitude_terganggu');
-            $table->string('longitude_terganggu');
-            $table->string('keterangan');
-            $table->string('tanggal_selesai_aduan');
-            $table->string('status');
+            $table->longText('upt');
+            $table->longText('no_isr');
+            $table->longText('no_surat_pengaduan');
+            $table->longText('tgl_surat_pengaduan');
+            $table->longText('tgl_terima_surat_pengaduan');
+            $table->longText('tgl_spt_pengukuran_karasteristik_frekuensi_radio');
+            $table->longText('uraian_kasus');
+            $table->longText('frekuensi_terganggu');
+            $table->longText('servis');
+            $table->longText('pihak_terganggu');
+            $table->longText('pihak_pengganggu');
+            $table->longText('latitude_pengganggu');
+            $table->longText('longitude_pengganggu');
+            $table->longText('latitude_terganggu');
+            $table->longText('longitude_terganggu');
+            $table->longText('keterangan');
+            $table->longText('tanggal_selesai_aduan');
+            $table->longText('status');
             $table->timestamps();
         });
     }

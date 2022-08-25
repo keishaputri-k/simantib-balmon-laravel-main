@@ -1,6 +1,11 @@
 <?php
 
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PenangananGangguanController;
+use App\Http\Controllers\PenyelenggaraController;
+use App\Http\Controllers\PenertibanController;
+use App\Http\Controllers\Pap2ghzController;
+use App\Http\Controllers\Pap5ghzController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +32,7 @@ Route::post('pegawai/update/{id}', [PegawaiController::class, 'updatePegawai']);
 Route::delete('pegawai/delete/{id}', [PegawaiController::class, 'deletePegawai']);
 
 //penyelenggara
-Route::get('penyelenggara/get', [PenyelenggaraController::class, 'readPenyelenggara']);
+Route::get('penyelenggara/get', 'PenyelenggaraController@readPenyelenggara');
 Route::get('penyelenggara/get/{id}', [PenyelenggaraController::class, 'readIdPenyelenggara']);
 Route::post('penyelenggara/create', [PenyelenggaraController::class, 'createPenyelenggara']);
 Route::post('penyelenggara/update/{id}', [PenyelenggaraController::class, 'updatePenyelenggara']);

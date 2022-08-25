@@ -2,14 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\PenyelenggaraImport;
 use App\Models\Penyelenggara;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session as FacadesSession;
+use Maatwebsite\Excel\Excel;
 
 class PenyelenggaraController extends Controller
 {
     //function Read
     public function readPenyelenggara(){
-        return Penyelenggara::all();
+        $penyelenggara = DB::table('penyelenggaras');
+        return view('penyelenggara',[
+            'penyelenggaraList' => $penyelenggara 
+            ->paginate(10)
+        ]);
     }
 
     //function Id Read
@@ -34,7 +43,7 @@ class PenyelenggaraController extends Controller
             $penyelenggara -> stn_name = $data['stn_name'];
             $penyelenggara -> stn_addr = $data['stn_addr'];
             $penyelenggara -> longitude = $data['longitude'];
-            $penyelenggara -> lantitude = $data['lantitude'];
+            $penyelenggara -> latitude = $data['latitude'];
             $penyelenggara -> city = $data['city'];
             $penyelenggara -> district = $data['district'];
             $penyelenggara -> province = $data['province'];
@@ -94,4 +103,30 @@ class PenyelenggaraController extends Controller
         $status = "delete status";
         return response()->json(compact('status'),200);
     }
+
+    public function import_penyelenggara(Request $request) 
+	{
+		// validasi
+		$this->validate($request, [
+			'file' => 'required|mimes:csv,xls,xlsx'
+		]);
+ 
+		// menangkap file excel
+		$file = $request->file('file');
+ 
+		// membuat nama file unik
+		$nama_file = rand().$file->getClientOriginalName();
+ 
+		// upload ke folder file_siswa di dalam folder public
+		$file->move('file_penyelenggara',$nama_file);
+ 
+		// import data
+		Excel::import(new PenyelenggaraImport, public_path('/file_penyelenggara/'.$nama_file));
+ 
+		// notifikasi dengan session
+		FacadesSession::flash('sukses','Data Siswa Berhasil Diimport!');
+ 
+		// alihkan halaman kembali
+		return redirect('/penyelenggara');
+	}
 }

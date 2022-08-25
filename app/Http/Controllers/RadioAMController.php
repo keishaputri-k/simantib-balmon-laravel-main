@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\RadioAM;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RadioAMController extends Controller
 {
     //function Read
     public function readRadioAM(){
-        return RadioAM::all();
+        $ram = DB::table('radio_a_m_s');
+        return view('laravel-examples.radio-am',[
+            'ramList' => $ram
+            ->paginate(10)
+        ]);
     }
 
     //function id Read
