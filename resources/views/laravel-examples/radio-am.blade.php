@@ -24,85 +24,77 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form name="add-radio-am-post-form" id="add-radio-am-post-form" method="post" action="api/radioAm/create">
+                                @csrf
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-sm">
-                                          <div class="row">
-                                            <div class="col-8 col-sm-6">
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Tanggal Observasi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Nama Pengguna</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Frekuensi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Dinas</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Sub Servis</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Jenis Pelanggaran</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Kabupaten / Kota</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-6">
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Status</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Operasi Stasiun</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No ISR</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No surat Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Upload</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                  <div class="row">
+                                                    <div class="col-8 col-sm-6">
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Nama stasiun radio</label>
+                                                            <input type="text" class="form-control" id="nama_stasiun_radio" name="nama_stasiun_radio">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Lokasi Pemancar</label>
+                                                            <input type="text" class="form-control" id="lokasi_pemancar" name="lokasi_pemancar">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Frekuensi terukur mhz</label>
+                                                            <input type="text" class="form-control" id="frekuensi_terukur_mhz" name="frekuensi_terukur_mhz">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Lokasi pemancar kecamatan</label>
+                                                            <input type="text" class="form-control" id="lokasi_pemancar_kecamatan" name="lokasi_pemancar_kecamatan">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Kabupaten / kota</label>
+                                                            <input type="text" class="form-control" id="kab_kota" name="kab_kota">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Provinsi</label>
+                                                            <input type="text" class="form-control" id="provinsi" name="provinsi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 col-sm-6">
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">No spt</label>
+                                                            <input type="text" class="form-control" id="no_spt" name="no_spt">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Tanggal spt</label>
+                                                            <input type="text" class="form-control" id="tanggal_spt" name="tanggal_spt">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Kecamatan</label>
+                                                            <input type="text" class="form-control" id="kecamatan" name="kecamatan">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Alamat</label>
+                                                            <input type="text" class="form-control" id="alamat" name="alamat">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Latitude</label>
+                                                            <input type="text" class="form-control" id="latitude" name="latitude">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Longitude</label>
+                                                            <input type="text" class="form-control" id="longitude" name="longitude">
+                                                        </div>
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Keterangan</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-                                          </div>
                                         </div>
                                       </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                </div>
                             </form>
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn bg-gradient-info">Confirm</button>
                         </div>
                       </div>
                     </div>

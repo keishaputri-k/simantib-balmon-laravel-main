@@ -14,7 +14,7 @@
             <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
               <div class="card card-plain mt-4">
                 <div class="card-header pb-0 text-left bg-transparent">
-                  <h3 class="font-weight-bolder text-info text-gradient">Welcome to SIMANTAN</h3>
+                  <h3 class="font-weight-bolder text-bg-info">Welcome to SIMANTAN</h3>
                   <p class="mb-0" style="font-size: 18px">Sistem Informasi Pemantauan<br></p>
                   <p class="mb-2" style="font-size: 18px">dan Penertiban</p>
                 </div>
@@ -52,7 +52,7 @@
             </div>
             
             <div class="col-md-6 d-md-block d-none me-n5 ms-auto p-7">
-              <img src="../../assets/img/login-illus.png" style="width: 400px; margin-top:35px;" alt="login-illustration">
+              <img src="../../assets/img/login-illustration.png" style="width: 400px; margin-top:35px;" alt="login-illustration">
             </div>
 
           </div>

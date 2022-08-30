@@ -22,13 +22,12 @@ class TvAnalogController extends Controller
         return TvAnalog::findOrFail($id);
     }
 
-    //function create
-    public function createTvAnalog(Request $request){
+     //function create
+     public function createTvAnalog(Request $request){
         $data = $request->all();
         try{
             $tvAnalog = new TvAnalog();
             $tvAnalog -> logo = $data['logo'];
-            $tvAnalog -> nama_penyelenggara = $data['nama_penyelenggara'];
             $tvAnalog -> alamat = $data['alamat'];
             $tvAnalog -> no_spt = $data['no_spt'];
             $tvAnalog -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
@@ -71,7 +70,7 @@ class TvAnalogController extends Controller
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return response()->json(compact('status', 'th'),404);
         }
     }
 

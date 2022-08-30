@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class TvDigitalController extends Controller
 {    
     //function Read
-    public function readTvDigtal(){
+    public function readTvDigital(){
         $tvDigital = DB::table('tv_digitals');
         return view('laravel-examples.tv-digital',[
             'tvDigitalList' => $tvDigital
@@ -70,7 +70,7 @@ class TvDigitalController extends Controller
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return response()->json(compact('status', 'th'),404);
         }
     }
 
@@ -127,8 +127,8 @@ class TvDigitalController extends Controller
     }
 
     public function deleteTvDigital($id){
-        $book = TvDigital::findOrFail($id);
-        $book -> delete();
+        $tvDigital = TvDigital::findOrFail($id);
+        $tvDigital -> delete();
 
         $status = "delete status";
         return response()->json(compact('status'),200);

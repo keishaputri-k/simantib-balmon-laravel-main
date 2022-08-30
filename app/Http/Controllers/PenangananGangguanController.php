@@ -36,6 +36,7 @@ class PenangananGangguanController extends Controller
             $pg -> tgl_spt_pengukuran_karasteristik_frekuensi_radio = $data['tgl_spt_pengukuran_karasteristik_frekuensi_radio'];
             $pg -> uraian_kasus = $data['uraian_kasus'];
             $pg -> frekuensi_terganggu = $data['frekuensi_terganggu'];
+            $pg -> servis = $data['servis'];
             $pg -> pihak_terganggu = $data['pihak_terganggu'];
             $pg -> pihak_pengganggu = $data['pihak_pengganggu'];
             $pg -> latitude_pengganggu = $data['latitude_pengganggu'];

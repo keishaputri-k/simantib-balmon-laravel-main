@@ -17,6 +17,7 @@ class Pap5ghz extends Model
         'koor_perangkat_longitude',
         'frekuensi',
         'merk_perangkat',
+        'tipe_perangkat',
         'pic_nama',
         'pic_no_tlp',
         'pic_email'

@@ -20,7 +20,7 @@ class MicrowaveLinkController extends Controller
         return MicrowaveLink::findOrFail($id);
     }
 
-    //function create
+    //create
     public function createMicrowaveLink(Request $request){
         $data = $request->all();
         try{
@@ -39,16 +39,17 @@ class MicrowaveLinkController extends Controller
             $ml -> sertifikat = $data['sertifikat'];
             $ml -> status = $data['status'];
             $ml -> keterangan = $data['keterangan'];
-
+        
             $ml -> save();
             $status = 'succes';
             return response()->json(compact('status', 'Microwave Link'),200);
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return response()->json(compact('status', 'th'),404);
         }
     }
+
 
     //function create
     public function updateMicrowaveLink($id, Request $request){

@@ -23,16 +23,13 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form name="add-tv-digital-post-form" id="add-tv-digital-post-form" method="post" action="{{url('tvDigital/create')}}">
+                                <form name="add-tv-digital-post-form" id="add-tv-digital-post-form" method="post" action="api/tvDigital/create">
+                                    @csrf
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-sm">
                                               <div class="row">
                                                 <div class="col-8 col-sm-6">
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Curr Lic Num</label>
-                                                        <input type="text" class="form-control" id="curr_lic_num" name="curr_lic_num" type="text">
-                                                    </div>
                                                     <div class="mb-3">
                                                         <label for="message-text" class="col-form-label">Logo</label>
                                                         <input type="text" class="form-control" id="logo" name="logo" type="text">
@@ -82,7 +79,6 @@
                                                         <input type="text" class="form-control" id="guard_interval" name="guard_interval">
                                                     </div>
                                                 </div>
-
                                                 <div class="col-4 col-sm-6">
                                                     <div class="mb-3">
                                                         <label for="message-text" class="col-form-label">Program penyelenggaraan 1</label>
@@ -181,19 +177,15 @@
                                                         <input type="text" class="form-control" id="program_standar_12" name="program_standar_12">
                                                     </div>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Keterangan</label>
-                                                    <textarea class="form-control" id="message-text"></textarea>
-                                                </div>
                                               </div>
                                             </div>
-                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn bg-gradient-info">Confirm</button>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn bg-gradient-info">Confirm</button>
                             </div>
                           </div>
                         </div>
@@ -254,6 +246,12 @@
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Program Standar 2
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Program Penyelenggaraan 3
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Program Standar 3
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Program Penyelenggaraan 4
@@ -346,6 +344,9 @@
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->status}}</p>
                                     </td>
                                     <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->frekuensi}}</p>
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->level }}</p>
                                     </td>
                                     <td class="text-center">
@@ -359,9 +360,6 @@
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_1 }}</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_1 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_1 }}</p>
@@ -404,19 +402,26 @@
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_8 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_8 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_9 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_9 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_10 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_10 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_11 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->program_standar_11 }}</p>
                                     </td><td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvDigital->Program_penyelenggaraan_12 }}</p>
@@ -427,12 +432,8 @@
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                            <i class="fas fa-user-edit text-secondary"></i>
-                                        </a>
-                                        <span>
-                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                        </span>
+                                            @method('DELETE')
+                                            <a href={{ "api/tvDigital/delete/".$tvDigital->id}}>delete</a>
                                     </td>
                                 </tr>
                                 @endforeach

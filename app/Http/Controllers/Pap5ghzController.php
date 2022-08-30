@@ -27,18 +27,18 @@ class Pap5ghzController extends Controller
         $data = $request->all();
         try{
             $pap5ghz = new Pap5ghz();
-            $pap5ghz -> tanggal = $data['tanggal'];
-            $pap5ghz -> alamat_lokasi_perangkat_pemancar = $data['alamat_lokasi_perangkat_pemancar'];
-            $pap5ghz -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
-            $pap5ghz -> koor_perangkat_lantitude = $data['koor_perangkat_lantitude'];
-            $pap5ghz -> koor_perangkat_longitude = $data['koor_perangkat_longitude'];
-            $pap5ghz -> frekuensi = $data['frekuensi'];
-            $pap5ghz -> merk_perangkat = $data['merk_perangkat'];
-            $pap5ghz -> pic_nama = $data['pic_nama'];
-            $pap5ghz -> pic_no_tlp = $data['pic_no_tlp'];
-            $pap5ghz -> pic_email = $data['pic_email'];
+            $pap5ghz-> tanggal = $data['tanggal'];
+            $pap5ghz-> alamat_lokasi_perangkat_pemancar = $data['alamat_lokasi_perangkat_pemancar'];
+            $pap5ghz-> koor_perangkat_lantitude = $data['koor_perangkat_lantitude'];
+            $pap5ghz-> koor_perangkat_longitude = $data['koor_perangkat_longitude'];
+            $pap5ghz-> frekuensi = $data['frekuensi'];
+            $pap5ghz-> merk_perangkat = $data['merk_perangkat'];
+            $pap5ghz-> tipe_perangkat = $data['tipe_perangkat'];
+            $pap5ghz-> pic_nama = $data['pic_nama'];
+            $pap5ghz-> pic_no_tlp = $data['pic_no_tlp'];
+            $pap5ghz-> pic_email = $data['pic_email'];
         
-           $pap5ghz -> save();
+            $pap5ghz -> save();
             $status = 'succes';
             return response()->json(compact('status', 'Pap 5ghz'),200);
         }catch(\Throwable $th){
@@ -54,7 +54,7 @@ class Pap5ghzController extends Controller
             $pap5ghz = new Pap5ghz();
             $pap5ghz -> tanggal = $data['tanggal'];
             $pap5ghz -> alamat_lokasi_perangkat_pemancar = $data['alamat_lokasi_perangkat_pemancar'];
-            $pap5ghz -> koor_perangkat_lantitude = $data['koor_perangkat_lantitude'];
+            $pap5ghz -> koor_perangkat_lantitude = $data['koor_perangkat_latitude'];
             $pap5ghz -> koor_perangkat_longitude = $data['koor_perangkat_longitude'];
             $pap5ghz -> frekuensi = $data['frekuensi'];
             $pap5ghz -> merk_perangkat = $data['merk_perangkat'];

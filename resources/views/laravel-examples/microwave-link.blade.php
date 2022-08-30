@@ -21,88 +21,79 @@
                       <div class="modal-content ">
                         <div class="modal-header">
                           <h5 class="modal-title" id="exampleModalLabel">Penertiban & Tindak Lanjut Entry Data</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form name="add-microwave-link-form" id="add-microwave-link-form" method="POST" action="api/microwaveLink/create">
+                                @csrf
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-sm">
-                                          <div class="row">
-                                            <div class="col-8 col-sm-6">
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Tanggal Observasi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Nama Pengguna</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Frekuensi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Dinas</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Sub Servis</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Jenis Pelanggaran</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Kabupaten / Kota</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
+                                        <div class="col-8 col-sm-6">
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Tanggal</label>
+                                                <input type="text" class="form-control" id="tanggal" name="tanggal">
                                             </div>
-                                            <div class="col-4 col-sm-6">
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Status</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Operasi Stasiun</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No ISR</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No surat Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Upload</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Metode</label>
+                                                <input type="text" class="form-control" id="metode" name="metode">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">No risalah hasil</label>
+                                                <input type="text" class="form-control" id="no_risalah_hasil" name="no_risalah_hasil">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Stn name</label>
+                                                <input type="text" class="form-control" id="stn_name" name="stn_name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Stasiun lawan</label>
+                                                <input type="text" class="form-control" id="stasiun_lawan" name="stasiun_lawan">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Koor long</label>
+                                                <input type="text" class="form-control" id="koor_long" name="koor_long">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Koor lat</label>
+                                                <input type="text" class="form-control" id="koor_lat" name="koor_lat">
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-sm-6">
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Tx mhz</label>
+                                                <input type="text" class="form-control" id="tx_mhz" name="tx_mhz">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Rx mhz</label>
+                                                <input type="text" class="form-control" id="rx_mhz" name="rx_mhz">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Bw mhz</label>
+                                                <input type="text" class="form-control" id="bw_mhz" name="bw_mhz">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Merk perangkat</label>
+                                                <input type="text" class="form-control" id="merk_perangkat" name="merk_perangkat">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Sertifikat</label>
+                                                <input type="text" class="form-control" id="sertifikat" name="sertifikat">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Status</label>
+                                                <input type="text" class="form-control" id="status" name="status">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="message-text" class="col-form-label">Keterangan</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
+                                                <input type="text" class="form-control" id="keterangan" name="keterangan">
                                             </div>
-                                          </div>
                                         </div>
-                                      </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn bg-gradient-info">Confirm</button>
                                 </div>
                             </form>
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn bg-gradient-info">Confirm</button>
                         </div>
                       </div>
                     </div>

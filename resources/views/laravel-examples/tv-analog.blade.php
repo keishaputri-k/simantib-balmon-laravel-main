@@ -24,85 +24,169 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form name="add-tv-analog-post-form" id="add-tv-analog-post-form" method="POST" action="api/tvAnalog/create">
+                                @csrf
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-sm">
                                           <div class="row">
                                             <div class="col-8 col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Tanggal Observasi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Logo</label>
+                                                    <input type="text" class="form-control" id="logo" name="logo" type="text">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Nama Pengguna</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Alamat</label>
+                                                    <input type="text" class="form-control" id="alamat" name="alamat">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">No spt</label>
+                                                    <input type="text" class="form-control" id="no_spt" name="no_spt">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Tanggal Pelaksanaan</label>
+                                                    <input type="text" class="form-control" id="tanggal_pelaksanaan" name="tanggal_pelaksanaan">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Penyelenggara Layanan</label>
+                                                    <input type="text" class="form-control" id="penyelenggara_layanan" name="penyelenggara_layanan">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Kanal</label>
+                                                    <input type="text" class="form-control" id="kanal" name="kanal">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Status</label>
+                                                    <input type="text" class="form-control" id="status" name="status">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Frekuensi</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <input type="text" class="form-control" id="frekuensi" name="frekuensi">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Dinas</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Level</label>
+                                                    <input type="text" class="form-control" id="level" name="level">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Sub Servis</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Bandwidth</label>
+                                                    <input type="text" class="form-control" id="bandwidth" name="bandwidth">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Jenis Pelanggaran</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Code rate</label>
+                                                    <input type="text" class="form-control" id="code_rate" name="code_rate">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Kabupaten / Kota</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Guard interval</label>
+                                                    <input type="text" class="form-control" id="guard_interval" name="guard_interval">
                                                 </div>
                                             </div>
                                             <div class="col-4 col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 1</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_1" name="Program_penyelenggaraan_1">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Status</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program standar 1</label>
+                                                    <input type="text" class="form-control" id="program_standar_1" name="program_standar_1">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Operasi Stasiun</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 2</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_2" name="Program_penyelenggaraan_2">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No ISR</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program standar 2</label>
+                                                    <input type="text" class="form-control" id="program_standar_2" name="program_standar_2">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">No surat Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 3</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_3" name="Program_penyelenggaraan_3">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Upload</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program standar 3</label>
+                                                    <input type="text" class="form-control" id="program_standar_3" name="program_standar_3">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Tanggal Penindakan</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 4</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_4" name="Program_penyelenggaraan_4">
                                                 </div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Keterangan</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 4</label>
+                                                    <input type="text" class="form-control" id="program_standar_4" name="program_standar_4">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 5</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_5" name="Program_penyelenggaraan_5">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 5</label>
+                                                    <input type="text" class="form-control" id="program_standar_5" name="program_standar_5">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 6</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_6" name="Program_penyelenggaraan_6">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 6</label>
+                                                    <input type="text" class="form-control" id="program_standar_6" name="program_standar_6">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 7</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_7" name="Program_penyelenggaraan_7">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 7</label>
+                                                    <input type="text" class="form-control" id="program_standar_7" name="program_standar_7">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 8</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_8" name="Program_penyelenggaraan_8">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 8</label>
+                                                    <input type="text" class="form-control" id="program_standar_8" name="program_standar_8">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 9</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_9" name="Program_penyelenggaraan_9">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 9</label>
+                                                    <input type="text" class="form-control" id="program_standar_9" name="program_standar_9">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 10</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_10" name="Program_penyelenggaraan_10">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 10</label>
+                                                    <input type="text" class="form-control" id="program_standar_10" name="program_standar_10">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 11</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_11" name="Program_penyelenggaraan_11">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 11</label>
+                                                    <input type="text" class="form-control" id="program_standar_11" name="program_standar_11">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program penyelenggaraan 12</label>
+                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_12" name="Program_penyelenggaraan_12">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Program standar 12</label>
+                                                    <input type="text" class="form-control" id="program_standar_12" name="program_standar_12">
+                                                </div>
                                             </div>
                                           </div>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                  </div>
                             </form>
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn bg-gradient-info">Confirm</button>
                         </div>
                       </div>
                     </div>
@@ -162,6 +246,12 @@
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Program Standar 2
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Program Penyelenggaraan 3
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Program Standar 3
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Program Penyelenggaraan 4
@@ -254,6 +344,9 @@
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->status}}</p>
                                     </td>
                                     <td class="text-center">
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->frekuensi}}</p>
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->level }}</p>
                                     </td>
                                     <td class="text-center">
@@ -267,9 +360,6 @@
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_1 }}</p>
-                                    </td>
-                                    <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_1 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_1 }}</p>
@@ -326,7 +416,8 @@
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_10 }}</p>
-                                    </td><td class="text-center">
+                                    </td>
+                                    <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_11 }}</p>
                                     </td>
                                     <td class="text-center">

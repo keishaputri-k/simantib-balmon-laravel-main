@@ -19,6 +19,7 @@ class PenangananGangguan extends Model
         'tgl_spt_pengukuran_karasteristik_frekuensi_radio',
         'uraian_kasus',
         'frekuensi_terganggu',
+        'servis',
         'pihak_terganggu',
         'pihak_pengganggu',
         'latitude_pengganggu',

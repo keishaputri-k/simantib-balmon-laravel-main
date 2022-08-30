@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MicrowaveLink extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'id',
         'tanggal',
@@ -24,6 +23,6 @@ class MicrowaveLink extends Model
         'merk_perangkat',
         'sertifikat',
         'status',
-        'keterangan'
+        'keterangan',
     ];
 }

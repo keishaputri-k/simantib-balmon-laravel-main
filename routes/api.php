@@ -4,6 +4,11 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PenangananGangguanController;
 use App\Http\Controllers\PenyelenggaraController;
 use App\Http\Controllers\PenertibanController;
+use App\Http\Controllers\TvDigitalController;
+use App\Http\Controllers\TvAnalogController;
+use App\Http\Controllers\RadioFMController;
+use App\Http\Controllers\RadioAMController;
+use App\Http\Controllers\MicrowaveLinkController;
 use App\Http\Controllers\Pap2ghzController;
 use App\Http\Controllers\Pap5ghzController;
 use Illuminate\Http\Request;
@@ -39,8 +44,8 @@ Route::post('penyelenggara/update/{id}', [PenyelenggaraController::class, 'updat
 Route::delete('penyelenggara/delete/{id}', [PenyelenggaraController::class, 'deletePenyelenggara']);
 
 //TvDigital
-Route::get('tvDigital/get', [TvDigitalController::class, 'readTvDigital']);
-Route::get('tvDigital/get/{id}', [TvDigitalController::class, 'readIdTvDigital']);
+Route::get('tvDigital/get', [TvDigitalController::class,'readTvDigital']);
+Route::get('tvDigital/get/{id}', [TvDigitalController::class, 'readIdTvDigtal']);
 Route::post('tvDigital/create', [TvDigitalController::class, 'createTvDigital']);
 Route::post('tvDigital/update/{id}', [TvDigitalController::class, 'updateTvDigital']);
 Route::delete('tvDigital/delete/{id}', [TvDigitalController::class, 'deleteTvDigital']);
@@ -100,3 +105,10 @@ Route::get('pap5ghz/get/{id}', [Pap5ghzController::class, 'readIdPap5ghz']);
 Route::post('pap5ghz/create', [Pap5ghzController::class, 'createPap5ghz']);
 Route::post('pap5ghz/update/{id}', [Pap5ghzController::class, 'updatePap5ghz']);
 Route::delete('pap5ghz/delete/{id}', [Pap5ghzController::class, 'deletePap5ghz']);
+
+//MicrowaveLink
+Route::get('microwaveLink/get', [MicrowaveLinkController::class, 'readMicrowaveLink']);
+Route::get('microwaveLink/get/{id}', [MicrowaveLinkController::class, 'readIdMicrowaveLink']);
+Route::post('microwaveLink/create', [MicrowaveLinkController::class, 'createMicrowaveLink']);
+Route::post('microwaveLink/update/{id}', [MicrowaveLinkController::class, 'updateMicrowaveLink']);
+Route::delete('microwaveLink/delete/{id}', [MicrowaveLinkController::class, 'deleteMicrowaveLink']);
