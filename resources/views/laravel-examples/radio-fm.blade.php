@@ -107,7 +107,7 @@
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         No
                                     </th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-center text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Nama Stasiun Radio
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -155,15 +155,9 @@
                                 <?php 
                                    $rfmList = DB::table('radio_f_m_s')->paginate(10); 
                                 ?>
-                                @foreach ($rfmList as $rfm)
+                                @foreach ($rfmList as $key => $rfm)
                                     <tr>
                                         <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $rfm->id }}</td>
-                                        <td class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">{{ $rfm->nama_stasiun_radio}}</p>
-                                        </td>
-                                        <td class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">{{ $rfm->lokasi_pemancar}}</p>
-                                        </td>
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">{{ $rfm->nama_stasiun_radio}}</p>
                                         </td>
@@ -204,11 +198,92 @@
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
                                         <td class="text-center">
-                                            <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                                <i class="fas fa-user-edit text-secondary"></i>
-                                            </a>
+                                            <a class="fas fa-user-edit text-secondary mx-3" data-bs-toggle="modal" data-bs-original-title="Edit user" data-bs-target="#editModal{{ $key }}" data-bs-whatever="@getbootstrap"></a>
+                                            {{-- popups update --}}
+                                            <div class="modal fade" id="editModal{{ $key }}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel">Radio AM Data Edit</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form name="add-radio-am-edit-form" id="add-radio-am-edit-form" method="POST" action="{{ url('api/radioFm/update/'.$rfm->id)}}">
+                                                            @csrf
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-sm">
+                                                                            <div class="row">
+                                                                                <div class="col-8 col-sm-6">
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Nama stasiun radio</label>
+                                                                                        <input type="text" class="form-control" id="nama_stasiun_radio" name="nama_stasiun_radio" value="{{ $rfm->nama_stasiun_radio}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Lokasi Pemancar</label>
+                                                                                        <input type="text" class="form-control" id="lokasi_pemancar" name="lokasi_pemancar" value="{{ $rfm->lokasi_pemancar}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Frekuensi terukur mhz</label>
+                                                                                        <input type="text" class="form-control" id="frekuensi_terukur_mhz" name="frekuensi_terukur_mhz" value="{{ $rfm->frekuensi_terukur_mhz }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Lokasi pemancar kecamatan</label>
+                                                                                        <input type="text" class="form-control" id="lokasi_pemancar_kecamatan" name="lokasi_pemancar_kecamatan" value="{{ $rfm->lokasi_pemancar_kecamatan}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Kabupaten / kota</label>
+                                                                                        <input type="text" class="form-control" id="kab_kota" name="kab_kota" value="{{ $rfm->kab_kota }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Provinsi</label>
+                                                                                        <input type="text" class="form-control" id="provinsi" name="provinsi" value="{{ $rfm->provinsi }}">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-4 col-sm-6">
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">No spt</label>
+                                                                                        <input type="text" class="form-control" id="no_spt" name="no_spt" value="{{ $rfm->no_spt}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Tanggal spt</label>
+                                                                                        <input type="text" class="form-control" id="tanggal_spt" name="tanggal_spt" value="{{ $rfm->tanggal_spt}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Kecamatan</label>
+                                                                                        <input type="text" class="form-control" id="kecamatan" name="kecamatan" value="{{ $rfm->kecamatan}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Alamat</label>
+                                                                                        <input type="text" class="form-control" id="alamat" name="alamat" value="{{ $rfm->alamat}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Latitude</label>
+                                                                                        <input type="text" class="form-control" id="latitude" name="latitude" value="{{ $rfm->latitude}}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Longitude</label>
+                                                                                        <input type="text" class="form-control" id="longitude" name="longitude" value="{{ $rfm->longitude}}">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                             <span>
-                                                <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                                <a class="cursor-pointer fas fa-trash text-secondary" href="{{ url('api/radioFm/delete/'.$rfm->id) }}"></a>
                                             </span>
                                         </td>
                                     </tr>

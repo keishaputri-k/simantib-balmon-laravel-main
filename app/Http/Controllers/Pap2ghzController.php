@@ -38,16 +38,16 @@ class Pap2ghzController extends Controller
             $pap2ghz -> pic_no_tlp = $data['pic_no_tlp'];
             $pap2ghz -> pic_email = $data['pic_email'];
         
-        
            $pap2ghz -> save();
            $status = 'succes';
-           return response()->json(compact('status', '2,4 GHZ'),200);
+           return redirect('/2-4ghz')->with('status','Data Created Successfully');
        }catch(\Throwable $th){
            //throw $th
            $status = 'error';
-           return response()->json(compact('status', 'th'),200);
+           return redirect('/2-4ghz')->with('status','Data Created Successfully');
        }
     }
+
      //update function
      public function updatePap2ghz($id, Request $request){
         $data = $request->all();
@@ -67,11 +67,11 @@ class Pap2ghzController extends Controller
 
             $pap2ghz-> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Pap 2ghz'),200);
+            return redirect('/2-4ghz')->with('status','Data Created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/2-4ghz')->with('status','Data Created Successfully');
         }
     }
 
@@ -81,6 +81,6 @@ class Pap2ghzController extends Controller
         $pap2ghz -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/2-4ghz')->with('status','Data deleted Successfully');
     }
 }

@@ -49,11 +49,11 @@ class PenangananGangguanController extends Controller
 
             $pg -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'penangan gangguan'),200);
+            return redirect('/penanganan-gangguan')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/penanganan-gangguan')->with('status','Data created Successfully');
         }
     }
 
@@ -61,7 +61,7 @@ class PenangananGangguanController extends Controller
     public function updatePenangananGangguan($id, Request $request){
         $data = $request->all();
         try{
-            $pg = PenangananGangguan::findOrFail($id);
+            $pg = PenangananGangguan::find($id);
             $pg -> upt = $data['upt'];
             $pg -> no_isr = $data['no_isr'];
             $pg -> no_surat_pengaduan = $data['no_surat_pengaduan'];
@@ -83,11 +83,11 @@ class PenangananGangguanController extends Controller
 
             $pg -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'penangan gangguan'),200);
+            return redirect('/penanganan-gangguan')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/penanganan-gangguan')->with('status','Data created Successfully');
         }
     }
 
@@ -97,6 +97,6 @@ class PenangananGangguanController extends Controller
         $book -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/penanganan-gangguan')->with('status','Data deleted Successfully');
     }
 }

@@ -40,11 +40,11 @@ class Pap5ghzController extends Controller
         
             $pap5ghz -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Pap 5ghz'),200);
+            return redirect('/pap5ghz')->with('status','Data Created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/pap5ghz')->with('status','Data Created Successfully');
         }
     }
      //update function
@@ -64,11 +64,11 @@ class Pap5ghzController extends Controller
 
             $pap5ghz-> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Pap 5ghz'),200);
+            return redirect('/pap5ghz')->with('status','Data Created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/pap5ghz')->with('status','Data Created Successfully');
         }
     }
 
@@ -78,7 +78,7 @@ class Pap5ghzController extends Controller
         $book -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/pap5ghz')->with('status','Data Deleted Successfully');
     }
 }
 

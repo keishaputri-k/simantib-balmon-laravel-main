@@ -27,7 +27,6 @@ class TvDigitalController extends Controller
         $data = $request->all();
         try{
             $tvDigital = new TvDigital();
-            $tvDigital -> logo = $data['logo'];
             $tvDigital -> alamat = $data['alamat'];
             $tvDigital -> no_spt = $data['no_spt'];
             $tvDigital -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
@@ -66,11 +65,11 @@ class TvDigitalController extends Controller
 
             $tvDigital -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Tv Digital'),200);
+            return redirect('/tv-digital')->with('status','Data deleted Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),404);
+            return redirect('/tv-digital')->with('status','Data deleted Successfully');
         }
     }
 
@@ -79,7 +78,6 @@ class TvDigitalController extends Controller
         $data = $request->all();
         try{
             $tvDigital = TvDigital::findOrFail($id);
-            $tvDigital -> logo = $data['logo'];
             $tvDigital -> alamat = $data['alamat'];
             $tvDigital -> no_spt = $data['no_spt'];
             $tvDigital -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
@@ -118,11 +116,11 @@ class TvDigitalController extends Controller
 
             $tvDigital -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Tv Digital'),200);
+            return redirect('/tv-digital')->with('status','Data deleted Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/tv-digital')->with('status','Data deleted Successfully');
         }
     }
 
@@ -131,6 +129,6 @@ class TvDigitalController extends Controller
         $tvDigital -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/tv-digital')->with('status','Data deleted Successfully');
     }
 }

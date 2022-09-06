@@ -17,8 +17,8 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'id' => 1,
-            'name' => 'admin',
-            'email' => 'admin@softui.com',
+            'name' => 'Reza',
+            'email' => '123456789',
             'password' => Hash::make('secret'),
             'created_at' => now(),
             'updated_at' => now()

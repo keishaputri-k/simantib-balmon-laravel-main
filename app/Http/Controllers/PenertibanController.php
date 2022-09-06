@@ -45,16 +45,16 @@ class PenertibanController extends Controller
 
             $penertiban -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'penertiban'),200);
+            return redirect('/penertiban')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/penertiban')->with('status','Data created Successfully');
         }
     }
 
     //update
-    public function updatePegawai($id, Request $request){
+    public function updatePenertiban($id, Request $request){
         $data = $request->all();
         try{
             $penertiban = Penertiban::findOrFail($id);
@@ -75,11 +75,11 @@ class PenertibanController extends Controller
             $penertiban -> save();
             
             $status = 'succes';
-            return response()->json(compact('status', 'penertiban'),200);
+            return redirect('/penertiban')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/penertiban')->with('status','Data created Successfully');
         }
     }
 
@@ -88,6 +88,6 @@ class PenertibanController extends Controller
         $book -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/penertiban')->with('status','Data deleted Successfully');
     }
 }

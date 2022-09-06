@@ -27,7 +27,6 @@ class TvAnalogController extends Controller
         $data = $request->all();
         try{
             $tvAnalog = new TvAnalog();
-            $tvAnalog -> logo = $data['logo'];
             $tvAnalog -> alamat = $data['alamat'];
             $tvAnalog -> no_spt = $data['no_spt'];
             $tvAnalog -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
@@ -66,11 +65,11 @@ class TvAnalogController extends Controller
 
             $tvAnalog -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Tv Analog'),200);
+            return redirect('/tv-analog')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),404);
+            return redirect('/tv-analog')->with('status','Data created Successfully');
         }
     }
 
@@ -79,8 +78,6 @@ class TvAnalogController extends Controller
         $data = $request->all();
         try{
             $tvAnalog = TvAnalog::findOrFail($id);
-            $tvAnalog -> logo = $data['logo'];
-            $tvAnalog -> nama_penyelenggara = $data['nama_penyelenggara'];
             $tvAnalog -> alamat = $data['alamat'];
             $tvAnalog -> no_spt = $data['no_spt'];
             $tvAnalog -> tanggal_pelaksanaan = $data['tanggal_pelaksanaan'];
@@ -119,11 +116,11 @@ class TvAnalogController extends Controller
 
             $tvAnalog -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Tv Analog'),200);
+            return redirect('/tv-analog')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/tv-analog')->with('status','Data created Successfully');
         }
     }
 
@@ -133,6 +130,6 @@ class TvAnalogController extends Controller
         $book -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/tv-analog')->with('status','Data deleted Successfully');
     }
 }

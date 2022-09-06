@@ -13,6 +13,7 @@
           <h6 class="ms-2 mt-4 mb-0"> Data in total </h6>
           <div class="container border-radius-lg">
             <div class="row">
+              
             </div>
           </div>
         </div>

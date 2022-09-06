@@ -42,11 +42,11 @@ class MicrowaveLinkController extends Controller
         
             $ml -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Microwave Link'),200);
+            return redirect('/microwave-link')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),404);
+            return redirect('/microwave-link')->with('status','Data created Successfully');
         }
     }
 
@@ -73,20 +73,20 @@ class MicrowaveLinkController extends Controller
 
             $ml -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Microwave Link'),200);
+            return redirect('/microwave-link')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/microwave-link')->with('status','Data created Successfully');
         }
     }
     
     //delete function
     public function deleteMicrowavelink($id){
-        $book = Microwavelink::findOrFail($id);
-        $book -> delete();
+        $ml = Microwavelink::findOrFail($id);
+        $ml -> delete();
 
         $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/microwave-link')->with('status','Data deleted Successfully');
     }
 }

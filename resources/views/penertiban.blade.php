@@ -2,6 +2,10 @@
 
 @section('content')
 
+<?php
+    $penertibanList = DB::table('penertibans')->paginate(10);
+?>
+
 <div>
     <div class="row">
         <div class="col-12">
@@ -162,10 +166,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                   $penertibanList = DB::table('penertibans')->paginate(10);
-                                ?>
-                                @foreach ($penertibanList as $penertiban)
+                                @foreach ($penertibanList as $key => $penertiban)
                                 <tr>
                                     <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $penertiban->id }}</td>
                                     <td class="text-center">
@@ -214,11 +215,95 @@
                                         <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                            <i class="fas fa-user-edit text-secondary"></i>
-                                        </a>
+                                        <a class="fas fa-user-edit text-secondary mx-3" data-bs-toggle="modal" data-bs-original-title="Edit user" data-bs-target="#editModal{{ $key }}" data-bs-whatever="@getbootstrap"></a>
+                                            {{-- popups update --}}
+                                            <div class="modal fade" id="editModal{{ $key }}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel">Penertiban Data Edit</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form name="add-penertiban-post-form" id="add-penertiban-post-form" method="post" action="{{ url('api/penertiban/update/'.$penertiban->id) }}">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-sm">
+                                                                      <div class="row">
+                                                                        <div class="col-8 col-sm-6">
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name" class="col-form-label">Tanggal Observasi</label>
+                                                                                <input type="text" class="form-control" id="tgl_observasi" name="tgl_observasi" value="{{ $penertiban->tgl_observasi}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Nama Pengguna</label>
+                                                                                <input type="text" class="form-control" id="nama_pengguna" name="nama_pengguna" value="{{ $penertiban->nama_pengguna}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Frekuensi</label>
+                                                                                <input type="text" class="form-control" id="frekuensi" name="frekuensi" value="{{ $penertiban->frekuensi}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Dinas</label>
+                                                                                <input type="text" class="form-control" id="subservice" name="subservice" value="{{ $penertiban->dinas}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Sub Servis</label>
+                                                                                <input type="text" class="form-control" id="dinas" name="dinas" value="{{ $penertiban->subservice}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Jenis Pelanggaran</label>
+                                                                                <input type="text" class="form-control" id="jenis_pelanggaran" name="jenis_pelanggaran" value="{{ $penertiban->jenis_pelanggaran}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Kabupaten / Kota</label>
+                                                                                <input type="text" class="form-control" id="kab_kota" name="kab_kota" value="{{ $penertiban->kab_kota}}">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 col-sm-6">
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Tindakan</label>
+                                                                                <input type="text" class="form-control" id="tindakan" name="tindakan" value="{{ $penertiban->tindakan}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Status</label>
+                                                                                <input type="text" class="form-control" id="status" name="status" value="{{ $penertiban->status}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Tanggal Operasi Stasiun</label>
+                                                                                <input type="text" class="form-control" id="tgl_operasi_stasiun" name="tgl_operasi_stasiun" value="{{ $penertiban->tgl_operasi_stasiun}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">No ISR</label>
+                                                                                <input type="text" class="form-control" id="no_isr" name="no_isr" value="{{ $penertiban->no_isr}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">No surat Penindakan</label>
+                                                                                <input type="text" class="form-control" id="no_surat_penindakan" name="no_surat_penindakan" value="{{ $penertiban->no_surat_penindakan}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Tanggal Penindakan</label>
+                                                                                <input type="text" class="form-control" id="tgl_penindakan" name="tgl_penindakan" value="{{ $penertiban->tgl_penindakan}}">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="message-text" class="col-form-label">Keterangan</label>
+                                                                                <input class="form-control" id="keterangan" name="keterangan" value="{{ $penertiban->keterangan}}">
+                                                                            </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                                            </div>
+                                                        </form> 
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                         <span>
-                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                            <a class="cursor-pointer fas fa-trash text-secondary" href="{{ url('api/penertiban/delete/'.$penertiban->id) }}"></a>
                                         </span>
                                     </td>
                                 </tr>

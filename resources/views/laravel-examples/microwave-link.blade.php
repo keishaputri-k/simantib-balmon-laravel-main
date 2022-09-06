@@ -160,7 +160,7 @@
                                 <?php 
                                    $mlList = DB::table('microwave_links')->paginate(10); 
                                 ?>
-                                @foreach ($mlList as $ml)
+                                @foreach ($mlList as $key =>  $ml)
                                     <tr>
                                         <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $ml->id }}</td>
                                         <td class="text-center">
@@ -209,11 +209,92 @@
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
                                         <td class="text-center">
-                                            <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                                <i class="fas fa-user-edit text-secondary"></i>
-                                            </a>
+                                            <a class="fas fa-user-edit text-secondary mx-3" data-bs-toggle="modal" data-bs-original-title="Edit user" data-bs-target="#editModal{{ $key }}" data-bs-whatever="@getbootstrap"></a>
+                                            {{-- popups update --}}
+                                            <div class="modal fade" id="editModal{{ $key }}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel">Tv Analog Data Edit</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form name="add-microwave-link-form" id="add-microwave-link-form" method="POST" action="{{ url('api/microwaveLink/update/'.$ml->id)}}">
+                                                            @csrf
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-8 col-sm-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Tanggal</label>
+                                                                            <input type="text" class="form-control" id="tanggal" name="tanggal" value="{{ $ml->tanggal}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Metode</label>
+                                                                            <input type="text" class="form-control" id="metode" name="metode" value="{{ $ml->metode}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">No risalah hasil</label>
+                                                                            <input type="text" class="form-control" id="no_risalah_hasil" name="no_risalah_hasil" value="{{ $ml->no_risalah_hasil}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Stn name</label>
+                                                                            <input type="text" class="form-control" id="stn_name" name="stn_name" value="{{ $ml->stn_name}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Stasiun lawan</label>
+                                                                            <input type="text" class="form-control" id="stasiun_lawan" name="stasiun_lawan" value="{{ $ml->stasiun_lawan}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Koor long</label>
+                                                                            <input type="text" class="form-control" id="koor_long" name="koor_long" value="{{ $ml->koor_long}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Koor lat</label>
+                                                                            <input type="text" class="form-control" id="koor_lat" name="koor_lat" value="{{ $ml->koor_lat}}">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4 col-sm-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Tx mhz</label>
+                                                                            <input type="text" class="form-control" id="tx_mhz" name="tx_mhz" value="{{ $ml->tx_mhz}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Rx mhz</label>
+                                                                            <input type="text" class="form-control" id="rx_mhz" name="rx_mhz" value="{{ $ml->rx_mhz}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Bw mhz</label>
+                                                                            <input type="text" class="form-control" id="bw_mhz" name="bw_mhz" value="{{ $ml->bw_mhz}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Merk perangkat</label>
+                                                                            <input type="text" class="form-control" id="merk_perangkat" name="merk_perangkat" value="{{ $ml->merk_perangkat}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Sertifikat</label>
+                                                                            <input type="text" class="form-control" id="sertifikat" name="sertifikat" value="{{ $ml->sertifikat}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Status</label>
+                                                                            <input type="text" class="form-control" id="status" name="status" value="{{ $ml->status}}">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Keterangan</label>
+                                                                            <input type="text" class="form-control" id="keterangan" name="keterangan" value="{{ $ml->keterangan}}">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                             <span>
-                                                <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                                <a class="cursor-pointer fas fa-trash text-secondary" href="{{ url('api/microwaveLink/delete/'.$ml->id) }}"></a>
                                             </span>
                                         </td>
                                     </tr>

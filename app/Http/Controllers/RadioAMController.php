@@ -42,11 +42,11 @@ class RadioAMController extends Controller
 
             $radioAM -> save();
             $status = 'succes';
-            return response()->json(compact('status', 'Radio AM'),200);
+            return redirect('/radio-am')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
             $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/radio-am')->with('status','Data created Successfully');
         }
     }
 
@@ -69,21 +69,18 @@ class RadioAMController extends Controller
             $radioAM -> longitude = $data['longitude'];
 
             $radioAM -> save();
-            $status = 'succes';
-            return response()->json(compact('status', 'Radio AM'),200);
+            return redirect('/radio-am')->with('status','Data created Successfully');
         }catch(\Throwable $th){
             //throw $th
-            $status = 'error';
-            return response()->json(compact('status', 'th'),200);
+            return redirect('/radio-am')->with('status','Data created Successfully');
         }
     }
 
     //delete function
     public function deleteRadioAM($id){
-        $book = RadioAM::findOrFail($id);
-        $book -> delete();
+        $ram = RadioAM::findOrFail($id);
+        $ram -> delete();
 
-        $status = "delete status";
-        return response()->json(compact('status'),200);
+        return redirect('/radio-am')->with('status','Data deleted Successfully');
     }
 }

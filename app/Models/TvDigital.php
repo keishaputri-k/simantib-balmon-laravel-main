@@ -12,7 +12,6 @@ class TvDigital extends Model
     protected $fillable = [
         'id',
         'curr_lic_num',
-        'logo',
         'alamat',
         'no_spt',
         'tanggal_pelaksanaan',

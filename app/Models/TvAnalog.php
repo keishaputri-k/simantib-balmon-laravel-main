@@ -11,7 +11,6 @@ class TvAnalog extends Model
 
     protected $fillable = [
         'curr_lic_num',
-        'logo',
         'alamat',
         'no_spt',
         'tanggal_pelaksanaan',

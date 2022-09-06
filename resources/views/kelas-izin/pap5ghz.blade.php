@@ -13,7 +13,7 @@
                         </div>
                         {{-- popup button --}}
                       <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">New Data</button>
-                    </div>
+                    </div> 
                 </div>
                 {{-- popups edit --}}
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -135,7 +135,7 @@
                                 <?php 
                                 $pap5ghzList = DB::table('pap5ghzs')->paginate(10);
                                 ?>
-                                @foreach ($pap5ghzList as $pap5ghz)
+                                @foreach ($pap5ghzList as $key => $pap5ghz)
                                     <tr>
                                         <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $pap5ghz->id}}</td>
                                      
@@ -173,11 +173,80 @@
                                             <p class="text-xs font-weight-bold mb-0"></p>
                                         </td>
                                         <td class="text-center">
-                                            <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
-                                                <i class="fas fa-user-edit text-secondary"></i>
-                                            </a>
+                                            <a class="fas fa-user-edit text-secondary mx-3" data-bs-toggle="modal" data-bs-original-title="Edit user" data-bs-target="#editModal{{ $key }}" data-bs-whatever="@getbootstrap"></a>
+                                            {{-- popups update --}}
+                                            <div class="modal fade" id="editModal{{$key}}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="editModalLabel">Penertiban Data Edit</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form name="add-pap2ghz-post-form" id="add-pap2ghz-post-form" method="POST" action="{{ url('api/pap5ghz/update/'.$pap5ghz->id) }}">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-8 col-sm-6">
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Tanggal</label>
+                                                                                    <input type="text" class="form-control" id="tanggal" name="tanggal" value="{{ $pap5ghz->tanggal }}">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Alamat lokasi perangkat pemancar</label>
+                                                                                    <input type="text" class="form-control" id="alamat_lokasi_perangkat_pemancar" name="alamat_lokasi_perangkat_pemancar" value="{{ $pap5ghz->alamat_lokasi_perangkat_pemancar }}">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Koor perangkat latitude</label>
+                                                                                    <input type="text" class="form-control" id="koor_perangkat_lantitude" name="koor_perangkat_lantitude" value="{{ $pap5ghz->koor_perangkat_lantitude }}">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Koor perangkat longitude</label>
+                                                                                    <input type="text" class="form-control" id="koor_perangkat_longitude" name="koor_perangkat_longitude" value="{{ $pap5ghz->koor_perangkat_longitude }}">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Frekuensi</label>
+                                                                                    <input type="text" class="form-control" id="frekuensi" name="frekuensi" value="{{ $pap5ghz->frekuensi }}">
+                                                                                </div>
+                                                                            </div>
+                                                                                <div class="col-4 col-sm-6"> 
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Merk perangkat</label>
+                                                                                        <input type="text" class="form-control" id="merk_perangkat" name="merk_perangkat" value="{{ $pap5ghz->merk_perangkat }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Tipe Perangkat</label>
+                                                                                        <input type="text" class="form-control" id="tipe_perangkat" name="tipe_perangkat"  value="{{ $pap5ghz->tipe_perangkat }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Pic nama</label>
+                                                                                        <input type="text" class="form-control" id="pic_nama" name="pic_nama" value="{{ $pap5ghz->pic_nama }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Pic no telpon</label>
+                                                                                        <input type="text" class="form-control" id="pic_no_tlp" name="pic_no_tlp" value="{{ $pap5ghz->pic_no_tlp }}">
+                                                                                    </div>
+                                                                                    <div class="mb-3">
+                                                                                        <label for="message-text" class="col-form-label">Pic email</label>
+                                                                                        <input type="text" class="form-control" id="pic_email" name="pic_email" value="{{ $pap5ghz->pic_email }}">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn bg-gradient-info">Confirm</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                             <span>
-                                                <i class="cursor-pointer fas fa-trash text-secondary"></i>
+                                                <a class="cursor-pointer fas fa-trash text-secondary" href="{{ url('api/pap5ghz/delete/'.$pap5ghz->id) }}"></a>
                                             </span>
                                         </td>
                                     </tr> 

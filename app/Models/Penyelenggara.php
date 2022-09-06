@@ -10,6 +10,7 @@ class Penyelenggara extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'curr_lic_num',
         'client_id',
         'application_id',
