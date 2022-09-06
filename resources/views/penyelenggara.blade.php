@@ -1,17 +1,5 @@
 @extends('layouts.user_type.auth')
 
-<?php 
-$host       = "127.0.0.1";
-$user       = "root";
-$pass       = "";
-$db         = "coba";
-
-$koneksi    = mysqli_connect($host, $user, $pass, $db);
-if (!$koneksi) { //Cek Koneksi Database Memastikan tersambung apa tidak
-    die("Tidak bisa terkoneksi ke database");
-}
-?>
-
 @section('content')
 <div>
     <div class="row">
