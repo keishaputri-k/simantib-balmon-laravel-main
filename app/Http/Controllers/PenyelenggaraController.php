@@ -13,11 +13,17 @@ use Maatwebsite\Excel\Excel;
 class PenyelenggaraController extends Controller
 {
     //function Read
-    public function readPenyelenggara(){
-        $penyelenggara = DB::table('penyelenggaras');
+    public function readPenyelenggara(Request $request){
+
+        if($request->has('search')){
+            $penyelenggara = Penyelenggara::where('curr_lic_num','LIKE','%'.$request->search.'%');
+        }else{
+            $penyelenggara = DB::table('penyelenggaras');
+        }
+
+       
         return view('penyelenggara',[
             'penyelenggaraList' => $penyelenggara 
-            ->paginate(10)
         ]);
     }
 

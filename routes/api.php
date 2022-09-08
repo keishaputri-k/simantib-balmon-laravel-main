@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompareController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PenangananGangguanController;
 use App\Http\Controllers\PenyelenggaraController;
@@ -37,11 +38,14 @@ Route::post('pegawai/update/{id}', [PegawaiController::class, 'updatePegawai']);
 Route::get('pegawai/delete/{id}', [PegawaiController::class, 'deletePegawai']);
 
 //penyelenggara
-Route::get('penyelenggara/get', 'PenyelenggaraController@readPenyelenggara');
+Route::get('penyelenggara/get', [PenyelenggaraController::class, 'readPenyelenggara'] );
 Route::get('penyelenggara/get/{id}', [PenyelenggaraController::class, 'readIdPenyelenggara']);
 Route::post('penyelenggara/create', [PenyelenggaraController::class, 'createPenyelenggara']);
 Route::post('penyelenggara/update/{id}', [PenyelenggaraController::class, 'updatePenyelenggara']);
 Route::get('penyelenggara/delete/{id}', [PenyelenggaraController::class, 'deletePenyelenggara']);
+
+//compare
+Route::get('compare/get', [CompareController::class, 'readCompare'])->name('comapre');
 
 //TvDigital
 Route::get('tvDigital/get', [TvDigitalController::class,'readTvDigital']);
