@@ -12,13 +12,13 @@ class CompareController extends Controller
 
         //method I
         if($request->has('search')){
-            $comparasion = Penyelenggara::where('curr_lic_num','LIKE','%'.$request->search.'%');
+            $comparasion = DB::table('penyelenggaras')->where('curr_lic_num','LIKE','%'.$request->search.'%')->get();
         }else{
-            $comparasion = DB::table('penyelenggaras');
+            $comparasion = DB::table('penyelenggaras')->paginate(1);
         }
 
        
-        return view('comparation',[
+        return view('comparation', [
             'penyelenggaraList' => $comparasion
         ]);
 

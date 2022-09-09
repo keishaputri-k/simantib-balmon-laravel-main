@@ -44,8 +44,6 @@ Route::post('penyelenggara/create', [PenyelenggaraController::class, 'createPeny
 Route::post('penyelenggara/update/{id}', [PenyelenggaraController::class, 'updatePenyelenggara']);
 Route::get('penyelenggara/delete/{id}', [PenyelenggaraController::class, 'deletePenyelenggara']);
 
-//compare
-Route::get('compare/get', [CompareController::class, 'readCompare'])->name('comapre');
 
 //TvDigital
 Route::get('tvDigital/get', [TvDigitalController::class,'readTvDigital']);

@@ -15,7 +15,7 @@
             {{-- Search ISR SIMS --}}
             <div class="bg-white border-radius-lg d-inline-flex  mb-3">
                 <i class="fas fa-search align-self-lg-center ps-3" aria-hidden="true"></i>
-                <form action="api/compare/get" method="GET" class="border-0 ps-3">
+                <form action="/compare/get" method="GET" class="border-0 ps-3">
                     <input type="search" id="search" name="search" class="form-control border-0" aria-label="Search"  placeholder="Type No ISR here..." value="{{ request('search') }}">
                 </form>   
             </div>
