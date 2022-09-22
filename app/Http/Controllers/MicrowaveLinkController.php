@@ -25,6 +25,9 @@ class MicrowaveLinkController extends Controller
         $data = $request->all();
         try{
             $ml = new MicrowaveLink();
+            $ml -> client_name = $data['client_name'];
+            $ml -> curr_lic_num = $data['curr_lic_num'];
+            $ml -> link_id = $data['link_id'];
             $ml -> tanggal = $data['tanggal'];
             $ml -> metode = $data['metode'];
             $ml -> no_risalah_hasil = $data['no_risalah_hasil'];
@@ -56,6 +59,9 @@ class MicrowaveLinkController extends Controller
         $data = $request->all();
         try{
             $ml = MicrowaveLink::findOrFail($id);
+            $ml -> client_name = $data['client_name'];
+            $ml -> curr_lic_num = $data['curr_lic_num'];
+            $ml -> link_id = $data['link_id'];
             $ml -> tanggal = $data['tanggal'];
             $ml -> metode = $data['metode'];
             $ml -> no_risalah_hasil = $data['no_risalah_hasil'];

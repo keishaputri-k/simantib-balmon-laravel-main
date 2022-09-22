@@ -29,6 +29,18 @@
                                     <div class="row">
                                         <div class="col-8 col-sm-6">
                                             <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Client Name</label>
+                                                <input type="text" class="form-control" id="client_name" name="client_name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Curr Lic Num</label>
+                                                <input type="text" class="form-control" id="curr_lic_num" name="curr_lic_num">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Link Id</label>
+                                                <input type="text" class="form-control" id="link_id" name="link_id">
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="message-text" class="col-form-label">Tanggal</label>
                                                 <input type="text" class="form-control" id="tanggal" name="tanggal">
                                             </div>
@@ -107,6 +119,15 @@
                                         No
                                     </th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        Client Name
+                                    </th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        Curr Lic Num
+                                    </th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        Link Id
+                                    </th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         tanggal
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -163,6 +184,15 @@
                                 @foreach ($mlList as $key =>  $ml)
                                     <tr>
                                         <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $ml->id }}</td>
+                                        <td class="text-center">
+                                            <p class="text-xs font-weight-bold mb-0">{{ $ml->client_name}}</p>
+                                        </td> 
+                                        <td class="text-center">
+                                            <p class="text-xs font-weight-bold mb-0">{{ $ml->curr_lic_num}}</p>
+                                        </td> 
+                                        <td class="text-center">
+                                            <p class="text-xs font-weight-bold mb-0">{{ $ml->link_id}}</p>
+                                        </td> 
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">{{ $ml->tanggal}}</p>
                                         </td> 
@@ -223,6 +253,18 @@
                                                             <div class="container-fluid">
                                                                 <div class="row">
                                                                     <div class="col-8 col-sm-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Client Name</label>
+                                                                            <input type="text" class="form-control" id="client_name" name="client_name">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Curr Lic Num</label>
+                                                                            <input type="text" class="form-control" id="curr_lic_num" name="curr_lic_num">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message-text" class="col-form-label">Link Id</label>
+                                                                            <input type="text" class="form-control" id="link_id" name="link_id">
+                                                                        </div>
                                                                         <div class="mb-3">
                                                                             <label for="message-text" class="col-form-label">Tanggal</label>
                                                                             <input type="text" class="form-control" id="tanggal" name="tanggal" value="{{ $ml->tanggal}}">

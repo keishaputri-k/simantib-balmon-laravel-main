@@ -132,7 +132,8 @@ Route::group(['middleware' => 'guest'], function () {
 });
 
 //compare
-Route::get('/compare/get', [CompareController::class, 'readCompare']);
+Route::get('/compare/get-sims', [CompareController::class, 'readSimsCompare']);
+Route::get('/compare/get-pemeriksaan', [CompareController::class, 'readPemeriksaanCompare']);
 
 Route::get('/login', function () {
     return view('session/login-session');

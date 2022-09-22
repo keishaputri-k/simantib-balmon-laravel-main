@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('microwave_links', function (Blueprint $table) {
             $table->id();
+            $table->string('client_name');
+            $table->string('curr_lic_num');
+            $table->string('link_id');
             $table->string('tanggal');
             $table->string('metode');
             $table->string('no_risalah_hasil');

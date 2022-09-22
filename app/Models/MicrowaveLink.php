@@ -10,6 +10,9 @@ class MicrowaveLink extends Model
     use HasFactory;
     protected $fillable = [
         'id',
+        'client_name',
+        'curr_lic_num',
+        'link_id',
         'tanggal',
         'metode',
         'no_risalah_hasil',

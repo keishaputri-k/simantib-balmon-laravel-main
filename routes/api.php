@@ -59,6 +59,7 @@ Route::post('tvAnalog/create', [TvAnalogController::class, 'createTvAnalog']);
 Route::post('tvAnalog/update/{id}', [TvAnalogController::class, 'updateTvAnalog']);
 Route::get('tvAnalog/delete/{id}', [TvAnalogController::class, 'deleteTvAnalog']);
 
+
 //RadioFm
 Route::get('radioFm/get', [RadioFmController::class, 'readRadioFm']);
 Route::get('radioFm/get/{id}', [RadioFmController::class, 'readIdRadioFm']);
