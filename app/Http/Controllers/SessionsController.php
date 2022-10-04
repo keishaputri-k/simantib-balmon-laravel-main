@@ -16,7 +16,7 @@ class SessionsController extends Controller
     public function store()
     {
         $attributes = request()->validate([
-            'email'=>'required|email',
+            'name'=>'required',
             'password'=>'required' 
         ]);
 
@@ -26,14 +26,12 @@ class SessionsController extends Controller
             return redirect('dashboard')->with(['success']);
         }
         else{
-
-            return back()->withErrors(['email'=>'Email or password invalid.']);
+            return back()->withErrors(['name'=>'NIP or password invalid.']);
         }
     }
     
     public function destroy()
     {
-
         Auth::logout();
 
         return redirect('/login')->with(['success'=>'You\'ve been logged out.']);

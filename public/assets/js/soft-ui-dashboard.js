@@ -766,7 +766,7 @@ var soft = {
               cancelButton: 'btn btn-danger'
             },
             buttonsStyling: false
-          }).then(function(result) {
+          }).then(function() {
             var eventData;
             var event_title = document.getElementById('input-field').value;
             if (event_title) {

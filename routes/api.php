@@ -12,8 +12,10 @@ use App\Http\Controllers\RadioAMController;
 use App\Http\Controllers\MicrowaveLinkController;
 use App\Http\Controllers\Pap2ghzController;
 use App\Http\Controllers\Pap5ghzController;
+use App\Models\TvDigital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +50,7 @@ Route::get('penyelenggara/delete/{id}', [PenyelenggaraController::class, 'delete
 //TvDigital
 Route::get('tvDigital/get', [TvDigitalController::class,'readTvDigital']);
 Route::get('tvDigital/get/{id}', [TvDigitalController::class, 'readIdTvDigtal']);
-Route::post('tvDigital/create', [TvDigitalController::class, 'createTvDigital']);
+Route::post('tvDigital/create', [TvDigitalController::class,'createTvDigital']);
 Route::post('tvDigital/update/{id}', [TvDigitalController::class, 'updateTvDigital']);
 Route::get('tvDigital/delete/{id}', [TvDigitalController::class, 'deleteTvDigital']);
 

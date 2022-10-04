@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('tv_analogs', function (Blueprint $table) {
             $table->id();
-            $table->string('logo');
             $table->string('alamat');
             $table->string('no_spt');
             $table->string('tanggal_pelaksanaan');

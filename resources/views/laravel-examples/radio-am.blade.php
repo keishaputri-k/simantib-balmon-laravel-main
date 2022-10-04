@@ -154,10 +154,11 @@
                             <tbody>
                                 <?php 
                                    $ramList = DB::table('radio_a_m_s')->paginate(10); 
+                                   $i = 1
                                 ?>
                                 @foreach ($ramList as $key => $ram)
                                     <tr>
-                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $ram->id }}</td>
+                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $i++ }}</td>
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">{{ $ram->nama_stasiun_radio}}</p>
                                         </td>

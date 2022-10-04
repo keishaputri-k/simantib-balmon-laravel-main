@@ -32,10 +32,6 @@
                                           <div class="row">
                                             <div class="col-8 col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Id</label>
-                                                    <input type="text" class="form-control" id="id" name="id">
-                                                </div>
-                                                <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Nama stasiun radio</label>
                                                     <input type="text" class="form-control" id="nama_stasiun_radio" name="nama_stasiun_radio">
                                                 </div>
@@ -154,10 +150,11 @@
                             <tbody>
                                 <?php 
                                    $rfmList = DB::table('radio_f_m_s')->paginate(10); 
+                                   $i = 1
                                 ?>
                                 @foreach ($rfmList as $key => $rfm)
                                     <tr>
-                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $rfm->id }}</td>
+                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $i++ }}</td>
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">{{ $rfm->nama_stasiun_radio}}</p>
                                         </td>

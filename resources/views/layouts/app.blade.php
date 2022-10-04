@@ -24,7 +24,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ asset('js/search.js') }}"></script>
   @if (env('IS_DEMO'))
       <x-demo-metas></x-demo-metas>
   @endif

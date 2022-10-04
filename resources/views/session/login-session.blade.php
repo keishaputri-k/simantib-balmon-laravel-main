@@ -23,8 +23,8 @@
                     @csrf
                     <label style="font-size: 14px;">NIP</label>
                     <div class="mb-3">
-                      <input type="email" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="email" id="email" placeholder="Email" value="admin@softui.com" aria-label="Email" aria-describedby="email-addon">
-                      @error('email')
+                      <input type="text" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="name" id="name" placeholder="name" value="1988071820210042" aria-label="name" aria-describedby="name-addon">
+                      @error('name')
                         <p class="text-danger text-xs mt-2">{{ $message }}</p>
                       @enderror
                     </div>
@@ -52,9 +52,51 @@
             </div>
             
             <div class="col-md-6 d-md-block d-none me-n5 ms-auto p-7">
-              <img src="../../assets/img/login-illustration.png" style="width: 400px; margin-top:35px;" alt="login-illustration">
+              {{-- <img src="../../assets/img/login-illustration.png" style="width: 400px; margin-top:35px;" alt="login-illustration"> --}}
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                </ol>
+                </ol>
+            
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../assets/img/login-illustration.png" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/img/login-illustration.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/img/login-illustration.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../assets/img/login-illustration.png" class="d-block w-100" alt="Slide 4">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../../assets/img/login-illustration.png" class="d-block w-100" alt="Slide 5">
+                  </div>
+                </div>
+            
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
-
+            <script>
+              $('.carousel').carousel({
+                interval: 2000
+              })
+            </script>
+            </div>
           </div>
         </div>
       </div>

@@ -3,17 +3,17 @@
 @section('content')
   <div class="row mt-4">
     <div class="col-lg-6 mb-lg-0 mb-4">
-      <div class="card z-index-2">
-        <div class="card-body p-3">
-          <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+      <div class="card z-index-2 ">
+        <div class="card-body p-3 mt-4 mb-3">
+          <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-4">
             <div class="chart">
               <canvas id="chart-bars" class="chart-canvas" height="200"></canvas>
             </div>
           </div>
-          <h6 class="ms-2 mt-4 mb-0"> Data in total </h6>
+          <h5 class="ms-2 mt-4 mb-0"> Data in total </h5>
           <div class="container border-radius-lg">
             <div class="row">
-              
+              <h6>10.293 Data</h6>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke1,
               fill: true,
-              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              data: [1, 5, 2, 4, 3, 7, 6, 9, 7, 8, 3, 1],
               maxBarThickness: 6
 
             },
@@ -169,7 +169,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke2,
               fill: true,
-              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              data: [4, 2, 5, 1, 7, 4, 6, 5, 1, 8, 3, 5],
               maxBarThickness: 6
             },
           ],
@@ -257,7 +257,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke1,
               fill: true,
-              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              data: [1, 5, 2, 4, 3, 7, 6, 9, 7, 8, 3, 1],
               maxBarThickness: 6
 
             },
@@ -270,7 +270,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke2,
               fill: true,
-              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              data: [4, 2, 5, 1, 7, 4, 6, 5, 1, 8, 3, 5],
               maxBarThickness: 6
             },
           ],
@@ -358,7 +358,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke1,
               fill: true,
-              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              data: [1, 5, 2, 4, 3, 7, 6, 9, 7, 8, 3, 1],
               maxBarThickness: 6
 
             },
@@ -371,7 +371,7 @@
               borderWidth: 3,
               backgroundColor: gradientStroke2,
               fill: true,
-              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              data: [4, 2, 5, 1, 7, 4, 6, 5, 1, 8, 3, 5],
               maxBarThickness: 6
             },
           ],

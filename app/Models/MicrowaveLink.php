@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MicrowaveLink extends Model
 {
     use HasFactory;
+    protected $table = "microwave_links";
     protected $fillable = [
         'id',
         'client_name',

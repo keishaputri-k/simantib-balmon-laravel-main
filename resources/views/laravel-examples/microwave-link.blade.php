@@ -180,10 +180,11 @@
                             <tbody>
                                 <?php 
                                    $mlList = DB::table('microwave_links')->paginate(10); 
+                                   $i = 1;
                                 ?>
                                 @foreach ($mlList as $key =>  $ml)
                                     <tr>
-                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $ml->id }}</td>
+                                        <td class="ps-4 text-xs-center font-weight-bold mb-0">{{ $i++ }}</td>
                                         <td class="text-center">
                                             <p class="text-xs font-weight-bold mb-0">{{ $ml->client_name}}</p>
                                         </td> 
