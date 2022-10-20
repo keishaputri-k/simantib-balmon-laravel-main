@@ -38,11 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('penertiban', function () {
 		return view('penertiban');
-	})->name('penertiban');
-
-	Route::get('profile', function () {
-		return view('profile');
-	})->name('profile');
+	})->name('penertiban');  
 
 	Route::get('tv-digital', function () {
 		return view("laravel-examples.tv-digital");
@@ -60,9 +56,9 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('laravel-examples.radio-am');
 	})->name('radio-am');
 
-	Route::get('microwave-link', function () {
-		return view('laravel-examples.microwave-link');
-	})->name('microwave-link');
+	Route::get('microwave-link-admin', function () {
+		return view('admin.monitoring-admin.microwave-link-admin');
+	})->name('microwave-link-admin');
 
 	Route::get('stl', function () {
 		return view('laravel-examples.stl');

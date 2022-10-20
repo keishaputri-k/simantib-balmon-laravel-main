@@ -10,7 +10,7 @@
             <img src="../../assets/img/logo-balmon-jakarta.png" style="width: 130px;" alt="login-logo-kominfo">
             <img src="../../assets/img/logo-kominfo.png" style="width: 80px;" alt="login-logo-balmon-jakarta">
           </div>
-          <div class="row" >
+          <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
               <div class="card card-plain mt-4">
                 <div class="card-header pb-0 text-left bg-transparent">
@@ -23,8 +23,8 @@
                     @csrf
                     <label style="font-size: 14px;">NIP</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="name" id="name" placeholder="name" value="1988071820210042" aria-label="name" aria-describedby="name-addon">
-                      @error('name')
+                      <input type="text" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="nip" id="nip" placeholder="name" value="1988071820210042" aria-label="nip" aria-describedby="name-addon">
+                      @error('nip')
                         <p class="text-danger text-xs mt-2">{{ $message }}</p>
                       @enderror
                     </div>

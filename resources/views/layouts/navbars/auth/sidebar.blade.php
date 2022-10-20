@@ -1,5 +1,6 @@
 
 <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
+  {{-- Logo Header --}}
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
     <a class="align-items-center d-flex m-0 navbar-brand text-wrap" href="{{ route('dashboard') }}">
@@ -43,14 +44,15 @@
             <stop offset="1" stop-color="#3190FF"/>
           </linearGradient>
         </defs>
-      </svg>
-        
+      </svg>  
         <span class="ms-3 font-weight-bold">SIMANTAN</span>
     </a>
   </div>
   <hr class="horizontal dark mt-0">
+  {{-- Admin --}}
   <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
     <ul class="navbar-nav">
+      {{-- Dashboard Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('dashboard') ? 'active' : '') }}" href="{{ url('dashboard') }}">
           <div class="icon icon-shapxe icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -70,6 +72,7 @@
           <span class="nav-link-text ms-1">Dashboard</span>
         </a>
       </li>
+      {{-- Comparation Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('comparation') ? 'active' : '') }}" href="{{ url('comparation') }}">
           <div class="icon icon-shapxe icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -89,9 +92,11 @@
           <span class="nav-link-text ms-1">Comparation</span>
         </a>
       </li>
+
       <li class="nav-item mt-3">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Monitoring</h6>
       </li>
+      {{-- Tv Digital Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('tv-digital') ? 'active' : '') }} " href="{{ url('tv-digital') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -111,6 +116,7 @@
             <span class="nav-link-text ms-1">Tv Digital</span>
         </a>
       </li>
+      {{-- Tv Analog Admin --}}
       <li class="nav-item pb-1">
         <a class="nav-link {{ (Request::is('tv-analog') ? 'active' : '') }}" href="{{ url('tv-analog') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -126,6 +132,7 @@
             <span class="nav-link-text ms-1">Tv Analog</span>
         </a>
       </li>
+      {{-- Radio Fm Admin --}}
       <li class="nav-item pb-1">
         <a class="nav-link {{ (Request::is('radio-fm') ? 'active' : '') }}" href="{{ url('radio-fm') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -136,6 +143,7 @@
             <span class="nav-link-text ms-1">Radio FM</span>
         </a>
       </li>
+      {{-- Radio Am Admin --}}
       <li class="nav-item pb-1">
         <a class="nav-link {{ (Request::is('radio-am') ? 'active' : '') }}" href="{{ url('radio-am') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -146,8 +154,9 @@
             <span class="nav-link-text ms-1">Radio AM</span>
         </a>
       </li>
+      {{-- Microwave Link Admin --}}
       <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('microwave-link') ? 'active' : '') }}" href="{{ url('microwave-link') }}">
+        <a class="nav-link {{ (Request::is('microwave-link-admin') ? 'active' : '') }}" href="{{ url('microwave-link-admin') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
                 <path fill="#000000" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"/>
@@ -156,39 +165,10 @@
             <span class="nav-link-text ms-1">Microwave Link</span>
         </a>
       </li>
-      {{-- <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('stl') ? 'active' : '') }}" href="{{ url('stl') }}">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-                <path fill="#000000" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"/>
-              </svg>
-            </div>
-            <span class="nav-link-text ms-1">STL</span>
-        </a>
-      </li>
-      <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('konsesi') ? 'active' : '') }}" href="{{ url('konsesi') }}">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-                <path fill="#000000" d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0c-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0c59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"/>
-              </svg>
-            </div>
-            <span class="nav-link-text ms-1">Konsesi</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {{ (Request::is('rhopf') ? 'active' : '') }}" href="{{ url('rhopf') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
-              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 23.355h9L17.889 4l11 40L37 23.355h9"/>
-            </svg>
-          </div>
-          <span class="nav-link-text ms-1">RHOPF</span>
-        </a>
-      </li> --}}
       <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Penertiban & Penanganan Gangguan</h6>
       </li>
+      {{-- Penertiban & Tindak Lanjut Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('penertiban') ? 'active' : '') }}" href="{{ url('penertiban') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -200,6 +180,7 @@
           <span class="nav-link-text ms-1">Penertiban & Tindak Lanjut</span>
         </a>
       </li>
+      {{-- Penanganan Gangguan Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('penanganan-gangguan') ? 'active' : '') }}" href="{{ url('penanganan-gangguan') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -214,7 +195,7 @@
       <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Izin Kelas</h6>
       </li>
-
+      {{-- 2,4 Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('2-4ghz') ? 'active' : '') }}" href="{{ url('2-4ghz') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -225,6 +206,7 @@
           <span class="nav-link-text ms-1">2,4 GHZ</span>
         </a>
       </li>
+      {{-- 5,8 Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('pap5ghz') ? 'active' : '') }}" href="{{ url('pap5ghz') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -235,9 +217,12 @@
           <span class="nav-link-text ms-1">5,8 GHZ</span>
         </a>
       </li>
+
       <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Data SIMS</h6>
       </li>
+
+      {{-- SIMS Admin --}}
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('penyelenggara') ? 'active' : '') }}" href="{{ url('penyelenggara') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -248,7 +233,7 @@
               <path fill="#000000" d="M21.81 27.42h5.96v1.4h-5.96zM10.84 12.24a18 18 0 0 0-7.95 2A1.67 1.67 0 0 0 2 15.71v3.1a1 1 0 0 0 2 0v-2.9a16 16 0 0 1 7.58-1.67a7.28 7.28 0 0 1-.74-2Zm22.27 1.99a17.8 17.8 0 0 0-7.12-2a7.46 7.46 0 0 1-.73 2A15.89 15.89 0 0 1 32 15.91v2.9a1 1 0 1 0 2 0v-3.1a1.67 1.67 0 0 0-.89-1.48Zm-22.45-3.62v-.67a3.07 3.07 0 0 1 .54-6.11a3.15 3.15 0 0 1 2.2.89a8.16 8.16 0 0 1 1.7-1.08a5.13 5.13 0 0 0-9 3.27a5.1 5.1 0 0 0 4.7 5a7.42 7.42 0 0 1-.14-1.3Zm14.11-8.78a5.17 5.17 0 0 0-3.69 1.55a7.87 7.87 0 0 1 1.9 1a3.14 3.14 0 0 1 4.93 2.52a3.09 3.09 0 0 1-1.79 2.77a7.14 7.14 0 0 1 .06.93a7.88 7.88 0 0 1-.1 1.2a5.1 5.1 0 0 0 3.83-4.9a5.12 5.12 0 0 0-5.14-5.07Z"/>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Penyelenggara</span>
+          <span class="nav-link-text ms-1">SIMS</span>
         </a>
       </li>
       {{-- <li class="nav-item mt-4">

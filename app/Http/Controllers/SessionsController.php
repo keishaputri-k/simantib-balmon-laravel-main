@@ -16,7 +16,7 @@ class SessionsController extends Controller
     public function store()
     {
         $attributes = request()->validate([
-            'name'=>'required',
+            'nip'=>'required',
             'password'=>'required' 
         ]);
 
@@ -26,7 +26,7 @@ class SessionsController extends Controller
             return redirect('dashboard')->with(['success']);
         }
         else{
-            return back()->withErrors(['name'=>'NIP or password invalid.']);
+            return back()->withErrors(['nip'=>'NIP or password invalid.']);
         }
     }
     
