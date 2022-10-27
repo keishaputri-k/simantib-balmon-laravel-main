@@ -98,7 +98,7 @@
       </li>
       {{-- Tv Digital Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('tv-digital') ? 'active' : '') }} " href="{{ url('tv-digital') }}">
+        <a class="nav-link {{ (Request::is('tv-digital-admin') ? 'active' : '') }} " href="{{ url('tv-digital-admin') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {{-- <path d="M6.25 33.75C6.25 33.4185 6.3817 33.1005 6.61612 32.8661C6.85054 32.6317 7.16848 32.5 7.5 32.5H32.5C32.8315 32.5 33.1495 32.6317 33.3839 32.8661C33.6183 33.1005 33.75 33.4185 33.75 33.75C33.75 34.0815 33.6183 34.3995 33.3839 34.6339C33.1495 34.8683 32.8315 35 32.5 35H7.5C7.16848 35 6.85054 34.8683 6.61612 34.6339C6.3817 34.3995 6.25 34.0815 6.25 33.75ZM34.9775 7.5L35.0375 7.5025C35.5046 7.5343 35.9612 7.65567 36.3825 7.86C36.6859 8.0012 36.9464 8.22031 37.1375 8.495C37.305 8.745 37.5 9.1875 37.5 10V24.9775L37.4975 25.0375C37.4655 25.5046 37.3441 25.9612 37.14 26.3825C36.9987 26.6858 36.7796 26.9463 36.505 27.1375C36.255 27.305 35.8125 27.5 35 27.5H5.0225L4.9625 27.4975C4.49543 27.4655 4.03884 27.3441 3.6175 27.14C3.31418 26.9987 3.05369 26.7796 2.8625 26.505C2.695 26.255 2.5 25.8125 2.5 25V10.0225L2.5025 9.9625C2.5343 9.49539 2.65567 9.03876 2.86 8.6175C3.0013 8.31418 3.22039 8.05369 3.495 7.8625C3.745 7.695 4.1875 7.5 5 7.5H34.9775ZM35 5H5C0 5 0 10 0 10V25C0 30 5 30 5 30H35C40 30 40 25 40 25V10C40 5 35 5 35 5Z" fill="black"/> --}}
@@ -118,7 +118,7 @@
       </li>
       {{-- Tv Analog Admin --}}
       <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('tv-analog') ? 'active' : '') }}" href="{{ url('tv-analog') }}">
+        <a class="nav-link {{ (Request::is('tv-analog-admin') ? 'active' : '') }}" href="{{ url('tv-analog-admin') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="25 0 215 230">
                 <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
@@ -134,7 +134,7 @@
       </li>
       {{-- Radio Fm Admin --}}
       <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('radio-fm') ? 'active' : '') }}" href="{{ url('radio-fm') }}">
+        <a class="nav-link {{ (Request::is('radio-fm-admin') ? 'active' : '') }}" href="{{ url('radio-fm-admin') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                 <path fill="#000000" d="M3 7v10h2v-4h3v-2H5V9h4V7H3m10 0a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2h-6Z"/>
@@ -145,7 +145,7 @@
       </li>
       {{-- Radio Am Admin --}}
       <li class="nav-item pb-1">
-        <a class="nav-link {{ (Request::is('radio-am') ? 'active' : '') }}" href="{{ url('radio-am') }}">
+        <a class="nav-link {{ (Request::is('radio-am-admin') ? 'active' : '') }}" href="{{ url('radio-am-admin') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                 <path fill="#000000" d="M5 7a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2H5m0 2h2v2H5V9m8-2a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2h-6Z"/>
@@ -170,7 +170,7 @@
       </li>
       {{-- Penertiban & Tindak Lanjut Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('penertiban') ? 'active' : '') }}" href="{{ url('penertiban') }}">
+        <a class="nav-link {{ (Request::is('penertiban-admin') ? 'active' : '') }}" href="{{ url('penertiban-admin') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
               <path fill="#000000" d="M10.16 31.71a4.4 4.4 0 0 1-4.64-1a4.34 4.34 0 0 1-1.29-3.11a4.41 4.41 0 0 1 .18-1.2a11.61 11.61 0 0 1-1-2.56a6.4 6.4 0 0 0 9.33 8.63a11.55 11.55 0 0 1-2.58-.76Zm8.25-4.03a7.61 7.61 0 0 1-9.08-1.26a7.58 7.58 0 0 1-1.27-9.06a14.26 14.26 0 0 1-.37-2.85a9.58 9.58 0 0 0 .22 13.33a9.63 9.63 0 0 0 13.35.22a14.46 14.46 0 0 1-2.85-.38Z"/>
@@ -182,7 +182,7 @@
       </li>
       {{-- Penanganan Gangguan Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('penanganan-gangguan') ? 'active' : '') }}" href="{{ url('penanganan-gangguan') }}">
+        <a class="nav-link {{ (Request::is('penanganan-gangguan-admin') ? 'active' : '') }}" href="{{ url('penanganan-gangguan-admin') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
               <path fill="#000000" fill-rule="evenodd" d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119c0 1.536.632 2.572 1.425 3.56c.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774c.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.354 18.354 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618C4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5c-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714c-.356.467-.615.898-.753 1.357a.75.75 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834c.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634c.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5zM9.5 21.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75zM8.75 18a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5z"/>
@@ -197,7 +197,7 @@
       </li>
       {{-- 2,4 Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('2-4ghz') ? 'active' : '') }}" href="{{ url('2-4ghz') }}">
+        <a class="nav-link {{ (Request::is('2-4ghz-admin') ? 'active' : '') }}" href="{{ url('2-4ghz-admin') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
               <path fill="#000000" fill-rule="evenodd" d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119c0 1.536.632 2.572 1.425 3.56c.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774c.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.354 18.354 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618C4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5c-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714c-.356.467-.615.898-.753 1.357a.75.75 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834c.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634c.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5zM9.5 21.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75zM8.75 18a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5z"/>
@@ -208,7 +208,7 @@
       </li>
       {{-- 5,8 Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('pap5ghz') ? 'active' : '') }}" href="{{ url('pap5ghz') }}">
+        <a class="nav-link {{ (Request::is('pap5ghz-admin') ? 'active' : '') }}" href="{{ url('pap5ghz-admin') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
               <path fill="#000000" d="M16 30h-2v-5a3.003 3.003 0 0 0-3-3H7a3.003 3.003 0 0 0-3 3v5H2v-5a5.006 5.006 0 0 1 5-5h4a5.006 5.006 0 0 1 5 5zM9 10a3 3 0 1 1-3 3a3 3 0 0 1 3-3m0-2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm21 4a1.992 1.992 0 0 0-.512.074l-1.055-1.055a3.879 3.879 0 0 0 0-4.038l1.055-1.055a2.034 2.034 0 1 0-1.414-1.414L27.02 5.567a3.879 3.879 0 0 0-4.038 0l-1.055-1.055a2.034 2.034 0 1 0-1.414 1.414l1.055 1.055a3.879 3.879 0 0 0 0 4.038l-1.055 1.055a2.034 2.034 0 1 0 1.414 1.414l1.055-1.055a3.879 3.879 0 0 0 4.038 0l1.055 1.055A1.996 1.996 0 1 0 30 12zm-7-3a2 2 0 1 1 2 2a2.002 2.002 0 0 1-2-2z"/>
@@ -224,7 +224,7 @@
 
       {{-- SIMS Admin --}}
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('penyelenggara') ? 'active' : '') }}" href="{{ url('penyelenggara') }}">
+        <a class="nav-link {{ (Request::is('penyelenggara-admin') ? 'active' : '') }}" href="{{ url('penyelenggara-admin') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 30">
               <path fill="#000000" d="M18.42 16.31a5.7 5.7 0 1 1 5.76-5.7a5.74 5.74 0 0 1-5.76 5.7Zm0-9.4a3.7 3.7 0 1 0 3.76 3.7a3.74 3.74 0 0 0-3.76-3.7Z"/>

@@ -36,25 +36,25 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('comparation');
 	})->name('comparation');
 
-	Route::get('penertiban', function () {
-		return view('penertiban');
-	})->name('penertiban');  
+	Route::get('penertiban-admin', function () {
+		return view('admin.pdg-admin.penertiban-admin');
+	})->name('penertiban-admin');  
 
-	Route::get('tv-digital', function () {
-		return view("laravel-examples.tv-digital");
-	})->name('tv-digital');
+	Route::get('tv-digital-admin', function () {
+		return view("admin.monitoring-admin.tv-digital-admin");
+	})->name('tv-digital-admin');
 
-	Route::get('tv-analog', function () {
-		return view("laravel-examples.tv-analog");
-	})->name('tv-analog');
+	Route::get('tv-analog-admin', function () {
+		return view("admin.monitoring-admin.tv-analog-admin");
+	})->name('tv-analog-admin');
 
-	Route::get('radio-fm', function () {
-		return view('laravel-examples/radio-fm');
-	})->name('radio-fm');
+	Route::get('radio-fm-admin', function () {
+		return view('admin.monitoring-admin.radio-fm-admin');
+	})->name('radio-fm-admin');
 
-	Route::get('radio-am', function () {
-		return view('laravel-examples.radio-am');
-	})->name('radio-am');
+	Route::get('radio-am-admin', function () {
+		return view('admin.monitoring-admin.radio-am-admin');
+	})->name('radio-am-admin');
 
 	Route::get('microwave-link-admin', function () {
 		return view('admin.monitoring-admin.microwave-link-admin');
@@ -72,21 +72,103 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('penindakan');
 	})->name('penindakan');
 
-	Route::get('penanganan-gangguan', function () {
-		return view('penanganan-gangguan');
-	})->name('penanganan-gangguan');
+	Route::get('penanganan-gangguan-admin', function () {
+		return view('admin.pdg-admin.penanganan-gangguan-admin');
+	})->name('penanganan-gangguan-admin');
 
-	Route::get('2-4ghz', function () {
-		return view('kelas-izin.2-4ghz');
-	})->name('2-4ghz');
+	Route::get('2-4ghz-admin', function () {
+		return view('admin.kelas-izin-admin.2-4ghz-admin');
+	})->name('2-4ghz-admin');
 
-	Route::get('pap5ghz', function () {
-		return view('kelas-izin.pap5ghz');
-	})->name('pap5ghz');
+	Route::get('pap5ghz-admin', function () {
+		return view('admin.kelas-izin-admin.pap5ghz-admin');
+	})->name('pap5ghz-admin');
 
-	Route::get('penyelenggara', function () {
-		return view('penyelenggara');
-	})->name('penyelenggara');
+	Route::get('penyelenggara-admin', function () {
+		return view('admin.penyelenggara-admin');
+	})->name('penyelenggara-admin');
+
+	//operator
+	Route::get('penyelenggara-operator', function () {
+		return view('operator.penyelenggara-operator');
+	})->name('penyelenggara-operator');
+
+	Route::get('tv-digital-operator', function () {
+		return view("operator.monitoring-operator.tv-digital-operator");
+	})->name('tv-digital-operator');
+
+	Route::get('tv-analog-operator', function () {
+		return view("operator.monitoring-operator.tv-analog-operator");
+	})->name('tv-analog-operator');
+
+	Route::get('radio-fm-operator', function () {
+		return view('operator.monitoring-operator.radio-fm-operator');
+	})->name('radio-fm-operator');
+
+	Route::get('radio-am-operator', function () {
+		return view('operator.monitoring-operator.radio-am-operator');
+	})->name('radio-am-operator');
+
+	Route::get('microwave-link-operator', function () {
+		return view('operator.monitoring-operator.microwave-link-operator');
+	})->name('microwave-link-operator');
+
+	Route::get('penanganan-gangguan-operator', function () {
+		return view('operator.pdg-operator.penanganan-gangguan-operator');
+	})->name('penanganan-gangguan-operator');
+
+	Route::get('penertiban-operator', function () {
+		return view('operator.pdg-operator.penertiban-operator');
+	})->name('penertiban-operator'); 
+
+	Route::get('2-4ghz-operator', function () {
+		return view('operator.kelas-izin-operator.2-4ghz-operator');
+	})->name('2-4ghz-operator');
+
+	Route::get('pap5ghz-operator', function () {
+		return view('operator.kelas-izin-operator.pap5ghz-operator');
+	})->name('pap5ghz-operator');
+
+	//user
+	Route::get('penyelenggara-user', function () {
+		return view('user.penyelenggara-user');
+	})->name('penyelenggara-user');
+
+	Route::get('tv-digital-user', function () {
+		return view("user.monitoring-user.tv-digital-user");
+	})->name('tv-digital-user');
+
+	Route::get('tv-analog-user', function () {
+		return view("user.monitoring-user.tv-analog-user");
+	})->name('tv-analog-user');
+
+	Route::get('radio-fm-user', function () {
+		return view('user.monitoring-user.radio-fm-user');
+	})->name('radio-fm-user');
+
+	Route::get('radio-am-user', function () {
+		return view('user.monitoring-user.radio-am-user');
+	})->name('radio-am-user');
+
+	Route::get('microwave-link-user', function () {
+		return view('user.monitoring-user.microwave-link-user');
+	})->name('microwave-link-user');
+
+	Route::get('penanganan-gangguan-user', function () {
+		return view('user.png-user.penanganan-gangguan-user');
+	})->name('penanganan-gangguan-user');
+
+	Route::get('penertiban-user', function () {
+		return view('user.png-user.penertiban-user');
+	})->name('penertiban-user'); 
+
+	Route::get('2-4ghz-user', function () {
+		return view('user.kelas-izin-user.2-4ghz-user');
+	})->name('2-4ghz-user');
+
+	Route::get('pap5ghz-user', function () {
+		return view('user.kelas-izin-user.pap5ghz-user');
+	})->name('pap5ghz-user');
 
 	Route::get('rhopf', function () {
 		return view('rhopf');
