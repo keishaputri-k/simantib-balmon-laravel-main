@@ -17,13 +17,13 @@ class SessionsController extends Controller
     {
         $attributes = request()->validate([
             'nip'=>'required',
-            'password'=>'required' 
+            'password'=>'required',
         ]);
 
         if(Auth::attempt($attributes))
         {
             session()->regenerate();
-            return redirect('dashboard')->with(['success']);
+            return redirect('asal-admin')->with(['success']);
         }
         else{
             return back()->withErrors(['nip'=>'NIP or password invalid.']);

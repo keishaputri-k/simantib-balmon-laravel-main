@@ -1,8 +1,8 @@
-
 <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
   {{-- Logo Header --}}
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    {{-- dashboard --}}
     <a class="align-items-center d-flex m-0 navbar-brand text-wrap" href="{{ route('dashboard') }}">
       <svg width="53" height="53" viewBox="0 0 195 241" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_309_4194)">
@@ -236,17 +236,6 @@
           <span class="nav-link-text ms-1">SIMS</span>
         </a>
       </li>
-      {{-- <li class="nav-item mt-4">
-        <a class="nav-link {{ (Request::is('employee') ? 'active' : '') }}" href="{{ url('employee') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
-              <path fill="#000000" d="M16.43 16.69a7 7 0 1 1 7-7a7 7 0 0 1-7 7Zm0-11.92a5 5 0 1 0 5 5a5 5 0 0 0-5-5ZM22 17.9a25.41 25.41 0 0 0-16.12 1.67a4.06 4.06 0 0 0-2.31 3.68v5.95a1 1 0 1 0 2 0v-5.95a2 2 0 0 1 1.16-1.86a22.91 22.91 0 0 1 9.7-2.11a23.58 23.58 0 0 1 5.57.66Zm.14 9.51h6.14v1.4h-6.14z"/>
-              <path fill="#000000" d="M33.17 21.47H28v2h4.17v8.37H18v-8.37h6.3v.42a1 1 0 0 0 2 0V20a1 1 0 0 0-2 0v1.47H17a1 1 0 0 0-1 1v10.37a1 1 0 0 0 1 1h16.17a1 1 0 0 0 1-1V22.47a1 1 0 0 0-1-1Z"/>
-            </svg>
-          </div>
-          <span class="nav-link-text ms-1">Employee</span>
-        </a>
-      </li> --}}
     </ul>
   </div>
 </aside>

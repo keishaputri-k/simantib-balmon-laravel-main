@@ -88,6 +88,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('admin.penyelenggara-admin');
 	})->name('penyelenggara-admin');
 
+	Route::get('asal-admin', function () {
+		return view('admin.asal');
+	})->name('asal-admin');
+
 	//operator
 	Route::get('penyelenggara-operator', function () {
 		return view('operator.penyelenggara-operator');

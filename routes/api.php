@@ -12,6 +12,7 @@ use App\Http\Controllers\RadioAMController;
 use App\Http\Controllers\MicrowaveLinkController;
 use App\Http\Controllers\Pap2ghzController;
 use App\Http\Controllers\Pap5ghzController;
+use App\Http\Controllers\UserController;
 use App\Models\TvDigital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -117,3 +118,5 @@ Route::get('microwaveLink/get/{id}', [MicrowaveLinkController::class, 'readIdMic
 Route::post('microwaveLink/create', [MicrowaveLinkController::class, 'createMicrowaveLink']);
 Route::post('microwaveLink/update/{id}', [MicrowaveLinkController::class, 'updateMicrowaveLink']);
 Route::get('microwaveLink/delete/{id}', [MicrowaveLinkController::class, 'deleteMicrowaveLink']);
+
+Route::get('user/{level}', [UserController::class, 'getLevel']);
