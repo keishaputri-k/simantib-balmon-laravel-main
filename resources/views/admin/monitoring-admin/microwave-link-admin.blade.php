@@ -12,10 +12,35 @@
                             <h5 class="mb-0">Microwave Link</h5>
                         </div>
                       {{-- popup button --}}
-                      <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">New Data</button>
+                        <div class="">
+                            <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@getbootstrap">Import</button>
+                            <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">New Data</button>
+                        </div>
                     </div>
                 </div>
-                {{-- popups edit --}}
+                {{-- popups import--}}
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Import Data</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post" enctype="multipart/form-data" action="api/importMl/" >
+                                    @csrf
+                                    Pilih File: 
+                                    <input name="fileMicrowaveLink" type="file" required="required"> 
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                         <button name="upload" type="submit" value="Import" class="btn btn-primary">Import</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                {{-- popups new data edit --}}
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-fullscreen">
                       <div class="modal-content ">

@@ -10,7 +10,7 @@ class MicrowaveLink extends Model
     use HasFactory;
     protected $table = "microwave_links";
     protected $fillable = [
-        'id',
+        // 'id',
         'client_name',
         'curr_lic_num',
         'link_id',
@@ -27,6 +27,6 @@ class MicrowaveLink extends Model
         'merk_perangkat',
         'sertifikat',
         'status',
-        'keterangan',
+        'keterangan'
     ];
 }

@@ -12,11 +12,13 @@ use App\Http\Controllers\RadioAMController;
 use App\Http\Controllers\MicrowaveLinkController;
 use App\Http\Controllers\Pap2ghzController;
 use App\Http\Controllers\Pap5ghzController;
+use App\Http\Controllers\UploadController;
 use App\Http\Controllers\UserController;
+use App\Imports\MicrowaveLinkImport;
 use App\Models\TvDigital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use Maatwebsite\Excel\Facades\Excel;
 
 /*
 |--------------------------------------------------------------------------
@@ -120,3 +122,4 @@ Route::post('microwaveLink/update/{id}', [MicrowaveLinkController::class, 'updat
 Route::get('microwaveLink/delete/{id}', [MicrowaveLinkController::class, 'deleteMicrowaveLink']);
 
 Route::get('user/{level}', [UserController::class, 'getLevel']);
+Route::post('importMl', [UploadController::class, 'uploadMl']);

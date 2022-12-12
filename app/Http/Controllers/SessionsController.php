@@ -23,7 +23,7 @@ class SessionsController extends Controller
         if(Auth::attempt($attributes))
         {
             session()->regenerate();
-            return redirect('asal-admin')->with(['success']);
+            return redirect('dashboard')->with(['success']);
         }
         else{
             return back()->withErrors(['nip'=>'NIP or password invalid.']);
