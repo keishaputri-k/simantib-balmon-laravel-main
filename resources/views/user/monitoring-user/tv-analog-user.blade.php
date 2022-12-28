@@ -172,72 +172,72 @@
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->guard_interval}}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_1 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_1 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_1 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_2 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_2 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_2 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_3 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_3 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_3 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_4 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_4 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_4 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_5 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_5 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_5 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_6 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_6 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_6 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_7}}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_7}}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_7 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_8 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_8 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_8 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_9 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_9 }}</p>
                                     </td><td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_9 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_10 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_10 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_10 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_11 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_11 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_11 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_12 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_12 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_12 }}</p>

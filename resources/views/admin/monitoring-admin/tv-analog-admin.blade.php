@@ -79,7 +79,7 @@
                                             <div class="col-4 col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 1</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_1" name="Program_penyelenggaraan_1">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_1" name="program_penyelenggaraan_1">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 1</label>
@@ -87,7 +87,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 2</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_2" name="Program_penyelenggaraan_2">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_2" name="program_penyelenggaraan_2">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 2</label>
@@ -95,7 +95,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 3</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_3" name="Program_penyelenggaraan_3">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_3" name="program_penyelenggaraan_3">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 3</label>
@@ -103,7 +103,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 4</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_4" name="Program_penyelenggaraan_4">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_4" name="program_penyelenggaraan_4">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 4</label>
@@ -111,7 +111,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 5</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_5" name="Program_penyelenggaraan_5">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_5" name="program_penyelenggaraan_5">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 5</label>
@@ -119,7 +119,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 6</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_6" name="Program_penyelenggaraan_6">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_6" name="program_penyelenggaraan_6">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 6</label>
@@ -127,7 +127,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 7</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_7" name="Program_penyelenggaraan_7">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_7" name="program_penyelenggaraan_7">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 7</label>
@@ -135,7 +135,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 8</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_8" name="Program_penyelenggaraan_8">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_8" name="program_penyelenggaraan_8">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 8</label>
@@ -143,7 +143,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 9</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_9" name="Program_penyelenggaraan_9">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_9" name="program_penyelenggaraan_9">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 9</label>
@@ -151,7 +151,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 10</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_10" name="Program_penyelenggaraan_10">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_10" name="program_penyelenggaraan_10">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 10</label>
@@ -159,7 +159,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 11</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_11" name="Program_penyelenggaraan_11">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_11" name="program_penyelenggaraan_11">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 11</label>
@@ -167,7 +167,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program penyelenggaraan 12</label>
-                                                    <input type="text" class="form-control" id="Program_penyelenggaraan_12" name="Program_penyelenggaraan_12">
+                                                    <input type="text" class="form-control" id="program_penyelenggaraan_12" name="program_penyelenggaraan_12">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="message-text" class="col-form-label">Program standar 12</label>
@@ -349,72 +349,72 @@
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->guard_interval}}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_1 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_1 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_1 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_2 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_2 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_2 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_3 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_3 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_3 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_4 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_4 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_4 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_5 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_5 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_5 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_6 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_6 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_6 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_7}}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_7}}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_7 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_8 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_8 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_8 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_9 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_9 }}</p>
                                     </td><td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_9 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_10 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_10 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_10 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_11 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_11 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_11 }}</p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->Program_penyelenggaraan_12 }}</p>
+                                        <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_penyelenggaraan_12 }}</p>
                                     </td>
                                     <td class="text-center">
                                         <p class="text-xs font-weight-bold mb-0">{{ $tvAnalog->program_standar_12 }}</p>
@@ -487,7 +487,7 @@
                                                                         <div class="col-4 col-sm-6">
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 1</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_1" name="Program_penyelenggaraan_1" value="{{ $tvAnalog->Program_penyelenggaraan_1 }}" >
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_1" name="program_penyelenggaraan_1" value="{{ $tvAnalog->program_penyelenggaraan_1 }}" >
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 1</label>
@@ -495,7 +495,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 2</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_2" name="Program_penyelenggaraan_2" value="{{ $tvAnalog->Program_penyelenggaraan_2 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_2" name="program_penyelenggaraan_2" value="{{ $tvAnalog->program_penyelenggaraan_2 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 2</label>
@@ -503,7 +503,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 3</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_3" name="Program_penyelenggaraan_3" value="{{ $tvAnalog->Program_penyelenggaraan_3 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_3" name="program_penyelenggaraan_3" value="{{ $tvAnalog->program_penyelenggaraan_3 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 3</label>
@@ -511,7 +511,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 4</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_4" name="Program_penyelenggaraan_4" value="{{ $tvAnalog->Program_penyelenggaraan_4 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_4" name="program_penyelenggaraan_4" value="{{ $tvAnalog->program_penyelenggaraan_4 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 4</label>
@@ -519,7 +519,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 5</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_5" name="Program_penyelenggaraan_5" value="{{ $tvAnalog->Program_penyelenggaraan_5 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_5" name="program_penyelenggaraan_5" value="{{ $tvAnalog->program_penyelenggaraan_5 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 5</label>
@@ -527,7 +527,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 6</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_6" name="Program_penyelenggaraan_6" value="{{ $tvAnalog->Program_penyelenggaraan_6 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_6" name="program_penyelenggaraan_6" value="{{ $tvAnalog->program_penyelenggaraan_6 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 6</label>
@@ -535,7 +535,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 7</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_7" name="Program_penyelenggaraan_7" value="{{ $tvAnalog->Program_penyelenggaraan_7 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_7" name="program_penyelenggaraan_7" value="{{ $tvAnalog->program_penyelenggaraan_7 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 7</label>
@@ -543,7 +543,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 8</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_8" name="Program_penyelenggaraan_8" value="{{ $tvAnalog->Program_penyelenggaraan_8 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_8" name="program_penyelenggaraan_8" value="{{ $tvAnalog->program_penyelenggaraan_8 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 8</label>
@@ -551,7 +551,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 9</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_9" name="Program_penyelenggaraan_9" value="{{ $tvAnalog->Program_penyelenggaraan_9 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_9" name="program_penyelenggaraan_9" value="{{ $tvAnalog->program_penyelenggaraan_9 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 9</label>
@@ -559,7 +559,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 10</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_10" name="Program_penyelenggaraan_10" value="{{ $tvAnalog->Program_penyelenggaraan_10 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_10" name="program_penyelenggaraan_10" value="{{ $tvAnalog->program_penyelenggaraan_10 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 10</label>
@@ -567,7 +567,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 11</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_11" name="Program_penyelenggaraan_11" value="{{ $tvAnalog->Program_penyelenggaraan_11 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_11" name="program_penyelenggaraan_11" value="{{ $tvAnalog->program_penyelenggaraan_11 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 11</label>
@@ -575,7 +575,7 @@
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program penyelenggaraan 12</label>
-                                                                                <input type="text" class="form-control" id="Program_penyelenggaraan_12" name="Program_penyelenggaraan_12" value="{{ $tvAnalog->Program_penyelenggaraan_12 }}">
+                                                                                <input type="text" class="form-control" id="program_penyelenggaraan_12" name="program_penyelenggaraan_12" value="{{ $tvAnalog->program_penyelenggaraan_12 }}">
                                                                             </div>
                                                                             <div class="mb-3">
                                                                                 <label for="message-text" class="col-form-label">Program standar 12</label>
