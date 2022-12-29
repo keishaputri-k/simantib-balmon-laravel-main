@@ -259,7 +259,6 @@ class CompareController extends Controller{
             $data = array(
                 'table_data' => $output,
             );
-
             echo json_encode($data);
         }
     }

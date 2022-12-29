@@ -23,7 +23,7 @@
                     @csrf
                     <label style="font-size: 14px;">NIP</label>
                     <div class="mb-3">
-                      <input type="text" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="nip" id="nip" placeholder="name" value="1988071820210042" aria-label="nip" aria-describedby="name-addon">
+                      <input type="text" class="form-control" style="height: 60px;box-shadow: 0px 4px 100px 5px rgba(209, 209, 209, 0.25);font-size: 16px" name="nip" id="nip" placeholder="name" value="1996050320220047" aria-label="nip" aria-describedby="name-addon">
                       @error('nip')
                         <p class="text-danger text-xs mt-2">{{ $message }}</p>
                       @enderror

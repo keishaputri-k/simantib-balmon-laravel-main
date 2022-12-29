@@ -17,7 +17,7 @@ class SessionsController extends Controller
     {
         $attributes = request()->validate([
             'nip'=>'required',
-            'password'=>'required' 
+            'password'=>'required',
         ]);
 
         if(Auth::attempt($attributes))

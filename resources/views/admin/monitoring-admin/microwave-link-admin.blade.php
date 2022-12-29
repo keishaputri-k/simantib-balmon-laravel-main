@@ -12,10 +12,12 @@
                             <h5 class="mb-0">Microwave Link</h5>
                         </div>
                       {{-- popup button --}}
-                      <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">New Data</button>
+                        <div class="">
+                            <button type="button" class="btn btn-info btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">New Data</button>
+                        </div>
                     </div>
                 </div>
-                {{-- popups edit --}}
+                {{-- popups new data edit --}}
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-fullscreen">
                       <div class="modal-content ">
