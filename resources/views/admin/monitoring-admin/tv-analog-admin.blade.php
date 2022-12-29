@@ -3,6 +3,7 @@
 @section('content')
 
 <div>
+    //analog
     <div class="row">
         <div class="col-12">
             <div class="card mb-4 mx-4">
